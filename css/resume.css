@@ -1,0 +1,288 @@
+/* General site styles */
+body {
+	margin: 0 auto;
+	background: linear-gradient(white, #cccccc);
+}
+
+#container {
+	margin: 0 auto;
+	max-width: 960px;
+	width: 100%;
+}
+
+#headerBar {
+	height: 60px;
+	width: 100%;
+	max-width: 960px;
+	background-color: #12458a;
+	float: left;
+}
+
+#headerBar h1 {
+	font-family: 'Raleway', sans-serif;
+	color: #6cd8df;
+	font-size: 40px;
+	margin: 6px 0 0 14px;
+	float: left;
+	letter-spacing: 3px;
+}
+
+#headerBar h2 {
+	color: white;
+	font-family: Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 25px;
+	margin: 17px 0 0 12px;
+	float: left;
+}
+
+#navBar {
+	height: 48px;
+	width: 100%;
+	max-width: 960px;
+	background-color: #363636;
+	float: left;
+}
+
+#navBar nav { /* Center nav links */
+	width: 960px;
+	margin: 0 auto;
+	margin-left: 22%; /* Estimate of nav link centering */
+}
+
+nav ul {
+	margin-top: 16px; /* There's an invisble margin I can't find somewhere 
+	that won't let this margin decrease anymore */
+}
+
+nav ul li {
+	display: inline;
+	float: left;
+}
+
+nav ul li a {
+	margin: 9px 25px 0 25px;
+	text-decoration: none; /* Removes link underlines */
+	color: white;
+	font-size: 16px;
+	font-weight: lighter;
+	font-family: Helvetica, sans-serif;
+	letter-spacing: 1px;
+}
+
+#navLinkFix {
+	margin-right: 0;
+}
+
+nav ul li a:hover {
+	color: #00fffc;
+}
+
+#mainContent { /* Container */
+	width: 100%;
+	max-width: 960px;
+	float: left;
+}
+
+#mainContent_Title h3 { /* Welcome! */
+	text-align: center;
+	font-size: 50px;
+	margin-bottom: 20px;
+	font-family: Helvetica, sans-serif;
+	font-weight: lighter;
+	color: #666666;
+}
+
+#resumeButtons {
+	width: 204px;
+	margin: auto;
+}
+
+#button-PDF {
+	border: solid #6cd8df 2px;
+	border-radius: 10px;
+	width: 200px;
+	height: 53px;
+	margin: auto;
+}
+
+#button-PDF img {
+	margin-left: 30px;
+	margin-top: 11px;
+	float: left;
+}
+
+#resumeButtons h5 {
+	font-size: 36px;
+	font-weight: normal;
+	font-family: Helvetica, sans-serif;
+	color: #00a3c0;
+	margin-top: 8px;
+	margin-left: 10px;
+	margin-bottom: 0;
+	float: left;
+}
+
+#subContent {
+	margin-left: 40px;
+	float: left;
+	margin-top: 40px;
+	width: 90%;
+}
+
+#subContent div {
+	margin-bottom: 25px;
+}
+
+#subContent h4, #subContent p {
+	font-family: Helvetica, sans-serif;
+	margin-top: 0;
+	margin-bottom: 3px;
+}
+
+#subContent h4 {
+	font-weight: normal;
+	letter-spacing: 0.5px;
+	font-size: 32px;
+}
+
+#subContent p {
+	font-weight: lighter;
+	font-size: 24px;
+}
+
+footer {
+	float: left;
+	margin-top: 4px;
+	width: 100%;
+	max-width: 960px;
+	height: auto;
+	padding-bottom: 15px;
+	background-color: #363636;
+}
+
+footer ul {
+	padding: 0;
+	margin-left: 25px;
+	margin-bottom: 52px; /* This is a cheap way of forcing the bottom text
+	below the links */
+}
+
+footer ul li {
+	display: inline;
+	float: left;
+	border-bottom: 1px #55c0cd solid;
+	padding-bottom: 5px;
+}
+
+footer ul li a {
+	margin: 0px 25px 0 0px;
+	text-decoration: none; /* Removes link underlines */
+	color: #55c0cd;
+	font-size: 20px;
+	font-weight: lighter;
+	font-family: Helvetica, sans-serif;
+	letter-spacing: 1px;
+}
+
+footer ul li a:hover {
+	color: #00fffc;
+}
+
+footer h6 {
+	float: left;
+	margin: 0 10px 0 25px;
+	color: white;
+	font-size: 13px;
+	font-family: Helvetica, sans-serif;
+	font-weight: lighter;
+	letter-spacing: 0.5px;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 500px) {
+	#navBar nav {
+		margin-left: 0;
+	}
+
+	nav ul {
+		padding-left: 15px;
+	}
+
+	nav ul li a {
+		margin-right: 36px;
+		margin-left: 0;
+	}
+
+	footer ul {
+		margin-left: 15px;
+	}
+
+	footer ul li a {
+		font-size: 16.5px;
+	}
+
+	footer h6 {
+		margin-left: 15px;
+	}
+
+	#mainContent_Title h3 {
+		margin-top: 25px;
+	}
+
+	#subContent {
+		margin-left: 15px;
+		margin-top: 40px;
+	}
+
+	#subContent h4 {
+		font-size: 22px;
+	}
+
+	#subContent p {
+		font-size: 16px;
+	}
+}
+
+/* Tablet Styles */
+@media screen and (min-width: 501px) and (max-width: 949px) {
+	#navBar nav {
+		margin-left: 0;
+	}
+
+	nav ul {
+		padding-left: 15px;
+	}
+
+	nav ul li a {
+		margin-right: 36px;
+		margin-left: 0;
+	}
+
+	#subContent {
+		margin-left: 25px;
+		margin-top: 40px;
+	}
+
+	#subContent h4 {
+		font-size: 26px;
+	}
+
+	#subContent p {
+		font-size: 20px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
