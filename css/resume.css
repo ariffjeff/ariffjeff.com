@@ -132,6 +132,8 @@ nav ul li a:hover {
 
 #subContent div {
 	margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
 }
 
 #subContent h4, #subContent p {
