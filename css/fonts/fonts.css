@@ -3,7 +3,7 @@
 
 
 @font-face {
-    font-family: 'exobold';
+    font-family: 'exo-bold';
     src: url('exo-bold-webfont.woff2') format('woff2'),
          url('exo-bold-webfont.woff') format('woff');
     font-weight: normal;
@@ -15,7 +15,7 @@
 
 
 @font-face {
-    font-family: 'exobold_italic';
+    font-family: 'exo-bolditalic';
     src: url('exo-bolditalic-webfont.woff2') format('woff2'),
          url('exo-bolditalic-webfont.woff') format('woff');
     font-weight: normal;
@@ -27,7 +27,7 @@
 
 
 @font-face {
-    font-family: 'exoitalic';
+    font-family: 'exo-italic';
     src: url('exo-italic-webfont.woff2') format('woff2'),
          url('exo-italic-webfont.woff') format('woff');
     font-weight: normal;
@@ -39,7 +39,7 @@
 
 
 @font-face {
-    font-family: 'exo_lightregular';
+    font-family: 'exo-light';
     src: url('exo-light-webfont.woff2') format('woff2'),
          url('exo-light-webfont.woff') format('woff');
     font-weight: normal;
@@ -51,7 +51,7 @@
 
 
 @font-face {
-    font-family: 'exo_lightitalic';
+    font-family: 'exo-lightitalic';
     src: url('exo-lightitalic-webfont.woff2') format('woff2'),
          url('exo-lightitalic-webfont.woff') format('woff');
     font-weight: normal;
@@ -63,7 +63,7 @@
 
 
 @font-face {
-    font-family: 'exoregular';
+    font-family: 'exo-regular';
     src: url('exo-regular-webfont.woff2') format('woff2'),
          url('exo-regular-webfont.woff') format('woff');
     font-weight: normal;
@@ -75,7 +75,7 @@
 
 
 @font-face {
-    font-family: 'exo_thinregular';
+    font-family: 'exo-thin';
     src: url('exo-thin-webfont.woff2') format('woff2'),
          url('exo-thin-webfont.woff') format('woff');
     font-weight: normal;
@@ -87,7 +87,7 @@
 
 
 @font-face {
-    font-family: 'exo_thinitalic';
+    font-family: 'exo-thinitalic';
     src: url('exo-thinitalic-webfont.woff2') format('woff2'),
          url('exo-thinitalic-webfont.woff') format('woff');
     font-weight: normal;
