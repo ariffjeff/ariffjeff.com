@@ -93,6 +93,11 @@ nav ul li a:hover {
 	color: #666666;
 }
 
+p {
+	font-family: exo-light;
+	text-align: center;
+}
+
 #resumeButtons {
 	width: 204px;
 	margin: auto;

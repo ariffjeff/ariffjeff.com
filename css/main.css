@@ -183,13 +183,13 @@ main {
     color:rgb(255, 168, 5);
 }
 
-#welcome {
+/* #welcome {
     background-color: #c1efef;
     padding: 5px 5px 5px 5px;
     box-shadow: 0px 5px 5px #90c9c9;
     position: relative;
     z-index: 1;
-}
+} */
 
 #welcome h3 {
     color: #A29E89;
