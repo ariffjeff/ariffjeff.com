@@ -194,13 +194,12 @@ main {
 #welcome h3 {
     color: #A29E89;
     font-size: 40px;
-    height: ;
     margin: 0;
     margin-top: 0px;
 }
 
 #about {
-    color: #A29E89;
+    color: #002f2d;
     background-color: #b1dbdb;
     padding: 25px 0px 15px 0px;
 }
