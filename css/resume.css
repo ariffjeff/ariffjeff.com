@@ -93,6 +93,10 @@ nav ul li a:hover {
 	color: #666666;
 }
 
+#warning_mobile {
+	display: none; 
+}
+
 p {
 	font-family: Helvetica, sans-serif;	
 	text-align: center;
@@ -221,6 +225,10 @@ footer h6 {
 		margin-left: 0;
 	}
 
+	#warning_mobile {
+		display: block; 
+	}
+
 	footer ul {
 		margin-left: 15px;
 	}
@@ -264,6 +272,10 @@ footer h6 {
 	nav ul li a {
 		margin-right: 36px;
 		margin-left: 0;
+	}
+
+	#warning_mobile {
+		display: block; 
 	}
 
 	#subContent {
