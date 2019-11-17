@@ -186,7 +186,15 @@ main {
 }
 
 #mainContent_Sub1 {
-	margin: auto;
+        margin: auto;
+}
+
+#mainContent_Sub1 a {
+    color: #00c5b1;
+}
+
+#mainContent_Sub1 a:hover {
+    color: #00ffe5;
 }
 
 #mainContent_Sub1 h4 {
