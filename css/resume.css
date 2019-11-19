@@ -103,16 +103,19 @@ p {
 }
 
 #resumeButtons {
-	width: 204px;
-	margin: auto;
+	display: table;
+    margin: auto;
+}
+
+#resumeButtons a {
+ 	margin: 0 10px 0 10px;
 }
 
 #button-PDF {
 	border: solid #6cd8df 2px;
 	border-radius: 10px;
-	width: 200px;
+	width: 300px;
 	height: 53px;
-	margin: auto;
 }
 
 #button-PDF img {
