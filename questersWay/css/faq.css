@@ -1,0 +1,543 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+/*
+* What follows is the result of much research on cross-browser styling.
+* Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+* Kroc Camen, and the H5BP dev community and team.
+*/
+/* ==========================================================================
+Base styles: opinionated defaults
+========================================================================== */
+/* line 13, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4; }
+
+/*
+* Remove text-shadow in selection highlight:
+* https://twitter.com/miketaylr/status/12228805301
+*
+* Vendor-prefixed and regular ::selection selectors cannot be combined:
+* https://stackoverflow.com/a/16982510/7133471
+*
+* Customize the background color to match your design.
+*/
+/* line 29, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/* line 34, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/*
+* A better looking default horizontal rule
+*/
+/* line 43, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/*
+* Remove the gap between audio, canvas, iframes,
+* images, videos and the bottom of their containers:
+* https://github.com/h5bp/html5-boilerplate/issues/440
+*/
+/* line 58, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle; }
+
+/*
+* Remove default fieldset styles.
+*/
+/* line 71, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/*
+* Allow only vertical resizing of textareas.
+*/
+/* line 81, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+textarea {
+  resize: vertical; }
+
+/* ==========================================================================
+Browser Upgrade Prompt
+========================================================================== */
+/* line 89, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* ==========================================================================
+Author's custom styles
+========================================================================== */
+/* ------------------------------------- Variables ------------------------------------- */
+/* ------------------------------------- Global ------------------------------------- */
+/* line 126, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+body {
+  font-family: arial;
+  background-color: #f8f9f9; }
+
+/* line 131, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+a {
+  text-decoration: none; }
+
+/* line 135, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+a:hover {
+  color: #e2e6e7; }
+
+/* line 139, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 145, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
+/* line 149, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+img {
+  width: 100%; }
+
+/* line 153, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+.button {
+  border-radius: 7px;
+  font-size: 15px;
+  padding: 0;
+  padding: 1.5vw 2.5vw;
+  color: white;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.4); }
+
+/* line 162, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+.button-green {
+  background-color: #71a344; }
+
+/* line 166, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+.button-green:hover {
+  background-color: #5b7c35; }
+
+/* line 170, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+.button-blue {
+  background-color: #7fa5c3; }
+
+/* line 174, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+.button-blue:hover {
+  background-color: #6b8da3; }
+
+/* line 178, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+.divider {
+  height: 1px;
+  background-color: #b8c4cb;
+  width: 90%;
+  margin: auto;
+  /* Center div */ }
+
+/* line 186, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+.content {
+  padding: 3vw; }
+
+/* ------------------------------------- Nav ------------------------------------- */
+/* line 191, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+nav {
+  background-color: #99c658;
+  text-align: center; }
+
+/* line 196, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+#navBorder {
+  background-color: #7fa5c3;
+  height: 12px;
+  box-shadow: 0px 5px 5px #b8c4cb; }
+
+/* line 202, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+nav a {
+  color: #f8f9f9; }
+
+/* line 206, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+nav li {
+  padding: 10px 0; }
+
+/* ------------------------------------- Header ------------------------------------- */
+/* line 211, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+header {
+  padding: 6vw 3vw;
+  align-items: center;
+  text-align: center;
+  background-color: #bcdee3;
+  color: #212a34;
+  padding: 3vw 6vw; }
+
+/* line 221, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+header a {
+  display: inline-block;
+  margin: 30px 0;
+  padding: 15px 50px !important; }
+
+/* line 227, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+header h6 {
+  font-size: 1em; }
+
+/* line 231, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+header p {
+  margin-top: 5vw; }
+
+/* ------------------------------------- Main ------------------------------------- */
+/* line 236, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 3vw;
+  background-color: #e0edab; }
+
+/* line 244, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+.infoPanelFlex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+/* line 250, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+.infoPanel {
+  background-color: white;
+  padding: 1vw;
+  margin: .5vw 0;
+  border: 1px solid #7fa5c3;
+  border-radius: .5vw;
+  width: 100%;
+  color: #525d68; }
+
+/* line 260, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+.infoPanel h3 {
+  color: #212a34; }
+
+/* line 264, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+.infoPanel p {
+  margin-bottom: 0; }
+
+/* line 268, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+.buttonFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+/* line 274, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+.buttonFlex a {
+  margin-top: 30px; }
+
+/* line 284, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+form, .contactDetails ul {
+  background-color: white;
+  border: 1px solid #7fa5c3;
+  color: #8895a6;
+  border-radius: 3px; }
+
+/* line 293, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+form h3 {
+  text-align: center;
+  color: #71a344; }
+
+/* line 298, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+form p {
+  display: flex;
+  flex-direction: column; }
+
+/* line 303, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+form button {
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  border-radius: 3px; }
+
+/* line 311, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+main input, textarea, .contactDetails ul {
+  border-radius: 3px;
+  border: 1px solid #7fa5c3;
+  padding: 5px; }
+
+/* line 317, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+.contactDetails {
+  background-color: #f8f9f9;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column; }
+
+/* line 326, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+.contactDetails ul {
+  margin: 3vw 0; }
+
+/* line 330, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+.contactDetails ul:first-child {
+  margin-top: 0; }
+
+/* ------------------------------------- Footer ------------------------------------- */
+/* line 335, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+footer {
+  background-color: #7fa5c3;
+  padding: 5vw 5vw; }
+
+/* line 341, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+footer, footer ul {
+  color: #f8f9f9; }
+
+/* line 345, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+footer a, .contactDetails a {
+  color: #c4e169; }
+
+/* line 349, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+footer ul, footer p {
+  margin: 10vw 0; }
+
+/* line 353, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+footer h2 {
+  margin-bottom: -6vw; }
+
+/* line 357, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+footer li:nth-child(1) {
+  color: #525d68; }
+
+/* ------------------------------------- Media Queries ------------------------------------- */
+@media (min-width: 768px) {
+  /* line 373, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+  nav > div {
+    display: flex; }
+  /* line 378, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+  #navLogo {
+    width: 20vw; }
+  /* line 382, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 80vw; }
+  /* line 389, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+  header h1 {
+    font-size: 40px; }
+  /* line 394, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+  header p {
+    margin-top: 1vw; }
+  /* line 398, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+  header {
+    padding: 3vw 20vw; }
+  /* line 403, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+  #mainImages {
+    flex-flow: row; }
+  /* line 414, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+  .infoPanelFlex {
+    justify-content: space-between; }
+  /* line 418, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+  .infoPanel {
+    width: 47%; }
+  /* line 422, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+  .contactDetails ul {
+    margin: 1vw 0; }
+  /* line 426, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+  main {
+    display: flex;
+    justify-content: space-around; }
+  /* line 431, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+  .formWidthFix {
+    width: 100%; }
+  /* line 435, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+  .contactDetails {
+    width: 75%;
+    padding-left: 0; }
+  /* line 440, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+  footer ul, footer p {
+    margin: 4vw 0; }
+  /* line 444, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+  footer h2 {
+    margin-bottom: -2vw; }
+  /* line 448, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+  footer {
+    display: flex;
+    justify-content: space-around; }
+  /* line 453, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+  footer p {
+    max-width: 26vw; }
+  /* line 457, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+  footer {
+    padding-bottom: 0vw; } }
+
+@media (min-width: 992px) {
+  /* line 476, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+  footer ul, footer p {
+    margin: 3vw 0; }
+  /* line 480, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+  button {
+    font-size: 1em; } }
+
+@media (min-width: 1200px) {
+  /* line 491, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+  footer {
+    padding: 0 10vw;
+    padding-top: 3vw; } }
+
+/* ==========================================================================
+Helper classes
+========================================================================== */
+/*
+* Hide visually and from screen readers
+*/
+/* line 510, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+.hidden {
+  display: none !important; }
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+/* line 523, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+  /* 1 */ }
+
+/*
+* Extends the .visuallyhidden class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+/* line 541, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit; }
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+/* line 556, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+.invisible {
+  visibility: hidden; }
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+/* line 572, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+/* line 578, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+.clearfix:after {
+  clear: both; }
+
+/* ==========================================================================
+EXAMPLE Media Queries for Responsive Design.
+These examples override the primary ('mobile first') styles.
+Modify as content requires.
+========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */ }
+
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */ }
+
+/* ==========================================================================
+Print styles.
+Inlined to avoid the additional HTTP request:
+https://www.phpied.com/delay-loading-your-print-css/
+========================================================================== */
+@media print {
+  /* line 606, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important; }
+  /* line 616, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+  a,
+  a:visited {
+    text-decoration: underline; }
+  /* line 621, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+  /* line 625, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+  /*
+    * Don't show links that are fragment identifiers,
+    * or use the `javascript:` pseudo protocol
+    */
+  /* line 634, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: ""; }
+  /* line 639, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+  pre {
+    white-space: pre-wrap !important; }
+  /* line 642, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+  /*
+    * Printing Tables:
+    * http://css-discuss.incutio.com/wiki/Printing_Tables
+    */
+  /* line 653, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+  thead {
+    display: table-header-group; }
+  /* line 657, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+  tr,
+  img {
+    page-break-inside: avoid; }
+  /* line 662, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+  /* line 669, /Users/ariffjeff/Desktop/AJs_UConn/Y4_S1/DMD-3470_AdvancedWebDesign/assignment15_finalProject-questersWay/css/faq.scss */
+  h2,
+  h3 {
+    page-break-after: avoid; } }
+
+/*# sourceMappingURL=faq.css.map */
