@@ -89,6 +89,41 @@ Author's custom styles
 ========================================================================== */
 /* ------------------------------------- Variables ------------------------------------- */
 /* ------------------------------------- Global ------------------------------------- */
+#homeLogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #181818;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#homeLogo div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  width: 43px;
+  height: 43px;
+  padding: 7px;
+}
+
+#homeLogo:hover {
+  padding: 13px 0;
+}
+
+#homeLogo:hover > div {
+  background-color: white;
+}
+
 body {
   font-family: arial;
 }
