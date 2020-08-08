@@ -1,13 +1,16 @@
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
 /* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
 * What follows is the result of much research on cross-browser styling.
 * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
 * Kroc Camen, and the H5BP dev community and team.
 */
+
 /* ==========================================================================
 Base styles: opinionated defaults
 ========================================================================== */
+
 html {
   color: #222;
   font-size: 1em;
@@ -23,6 +26,7 @@ html {
 *
 * Customize the background color to match your design.
 */
+
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -36,6 +40,7 @@ html {
 /*
 * A better looking default horizontal rule
 */
+
 hr {
   display: block;
   height: 1px;
@@ -50,6 +55,7 @@ hr {
 * images, videos and the bottom of their containers:
 * https://github.com/h5bp/html5-boilerplate/issues/440
 */
+
 audio,
 canvas,
 iframe,
@@ -62,6 +68,7 @@ video {
 /*
 * Remove default fieldset styles.
 */
+
 fieldset {
   border: 0;
   margin: 0;
@@ -71,6 +78,7 @@ fieldset {
 /*
 * Allow only vertical resizing of textareas.
 */
+
 textarea {
   resize: vertical;
 }
@@ -78,6 +86,9 @@ textarea {
 /* ==========================================================================
 Author's custom styles
 ========================================================================== */
+
+$linkHover: #d0d0d0;
+
 html {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
@@ -94,8 +105,7 @@ a {
 }
 
 a:hover {
-  color: #d0d0d0;
-  -webkit-transition: .1s;
+  color: $linkHover;
   transition: .1s;
 }
 
@@ -104,7 +114,7 @@ a:hover {
 }
 
 .bar {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 1);
   border-radius: 9999px;
   padding: 10px 25px;
 }
@@ -118,61 +128,54 @@ a:hover {
 }
 
 .popup_copy {
+  $paddingWidth: 15px;
   position: absolute;
   display: none;
+  // align-items: center; // centers elements but removes heights all being the same
   left: -25%;
   top: 115%;
-}
 
-.popup_copy p, .popup_copy button {
-  background-color: white;
-}
+  p, button {
+    background-color: white;
+  }
 
-.popup_copy p {
-  border-radius: 10px 0 0 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 10px 15px;
-}
+  p {
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    // align-items: center;
+    padding: 10px $paddingWidth;
+  }
 
-.popup_copy button {
-  border: none;
-  cursor: pointer;
-  border-left: 1px solid #b8b8b8;
-  border-radius: 0 10px 10px 0;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  padding: 0 15px;
-}
+  button {
+    border: none;
+    cursor: pointer;
+    border-left: 1px solid rgb(184, 184, 184);
+    border-radius: 0 10px 10px 0;
+    user-select: none;
+    padding: 0 $paddingWidth;
 
-.popup_copy button:hover {
-  -webkit-filter: brightness(90%);
-          filter: brightness(90%);
-  -webkit-transition: .1s;
-  transition: .1s;
-}
+    &:hover {
+      filter: brightness(90%);
+      transition: .1s;
+    }
 
-.popup_copy button:active {
-  -webkit-filter: brightness(80%);
-          filter: brightness(80%);
-}
+    &:active {
+      filter: brightness(80%);
+    }
+  }
 
-.popup_copy img {
-  height: 25px !important;
+  img {
+    height: 25px !important;
+  }
 }
 
 .popup_copy:hover {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+  // remain displayed after mouse unhovered original button
+  // also makes all elements same height
 }
 
-#contactEmail:hover + #popup {
-  display: -webkit-box;
-  display: -ms-flexbox;
+#contactEmail:hover + #popup { // affects element outside of other element
   display: flex;
 }
 
@@ -188,30 +191,21 @@ a:hover {
 body {
   background-image: url("/img/triLight.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; 
   height: 100vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  flex-direction: column;
 }
 
 #name {
-  font-size: calc(12px + 8vw);
+  font-size:calc(12px + 8vw);
   letter-spacing: 5px;
-  margin-bottom: -10px;
+  margin-bottom:-10px;
 }
 
 #bio {
@@ -227,61 +221,55 @@ main {
 nav {
   font-size: 20px;
   margin-bottom: 15px;
-}
+  
+  ul {
+    list-style-type: none;
+    justify-content: center;
+    padding: 0;
+    letter-spacing: 4px;
+  }
+  
+  li {
+    margin: 0 20px;
+  }
 
-nav ul {
-  list-style-type: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0;
-  letter-spacing: 4px;
-}
+  div {
+    width: 25vw;
+    height: 18vh;
+    transform: skew(20deg);
+    background-image: url("/img/triLight.jpg");
+    box-shadow: rgba(0, 0, 0, 0.479) 5px 5px 5px;
+  }
 
-nav li {
-  margin: 0 20px;
-}
-
-nav div {
-  width: 25vw;
-  height: 18vh;
-  -webkit-transform: skew(20deg);
-          transform: skew(20deg);
-  background-image: url("/img/triLight.jpg");
-  -webkit-box-shadow: rgba(0, 0, 0, 0.479) 5px 5px 5px;
-          box-shadow: rgba(0, 0, 0, 0.479) 5px 5px 5px;
-}
-
-nav h3 {
-  -webkit-transform: skew(-20deg);
-          transform: skew(-20deg);
-  mix-blend-mode: overlay;
+  h3 {
+    transform: skew(-20deg);
+    mix-blend-mode: overlay;
+  }
 }
 
 #social {
   position: relative;
   top: 16vh;
-}
 
-#social a {
-  margin: 0 10px;
-  width: 40px;
-  height: 40px;
-  opacity: 90%;
-}
+  a {
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    opacity: 90%;
 
-#social a:hover {
-  opacity: 70%;
-}
-
-#social img {
-  height: 34px;
-  max-width: 38px;
+    &:hover {
+      opacity: 70%;
+      // mix-blend-mode: multiply;
+    }
+  }
+  
+  img {
+    height: 34px;
+    max-width: 38px;
+  }
 }
 
 .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -289,23 +277,23 @@ nav h3 {
   background-color: white;
   padding: 10px;
   border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  // shape-outside: circle();
+  //   clip-path: circle();
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
+
+
 
 /* ==========================================================================
 Helper classes
 ========================================================================== */
+
 /*
 * Hide visually and from screen readers
 */
+
 .hidden,
 [hidden] {
   display: none !important;
@@ -319,6 +307,7 @@ Helper classes
 *    causes content to wrap 1 word per line:
 *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
 */
+
 .sr-only {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -337,6 +326,7 @@ Helper classes
 * to be focusable when navigated to via the keyboard:
 * https://www.drupal.org/node/897638
 */
+
 .sr-only.focusable:active,
 .sr-only.focusable:focus {
   clip: auto;
@@ -351,6 +341,7 @@ Helper classes
 /*
 * Hide visually and from screen readers, but maintain layout
 */
+
 .invisible {
   visibility: hidden;
 }
@@ -366,6 +357,7 @@ Helper classes
 * 2. The use of `table` rather than `block` is only necessary if using
 *    `:before` to contain the top-margins of child elements.
 */
+
 .clearfix::before,
 .clearfix::after {
   content: " ";
@@ -381,11 +373,15 @@ EXAMPLE Media Queries for Responsive Design.
 These examples override the primary ('mobile first') styles.
 Modify as content requires.
 ========================================================================== */
+
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
 
-@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -394,6 +390,7 @@ Print styles.
 Inlined to avoid the additional HTTP request:
 https://www.phpied.com/delay-loading-your-print-css/
 ========================================================================== */
+
 @media print {
   *,
   *::before,
@@ -401,20 +398,23 @@ https://www.phpied.com/delay-loading-your-print-css/
     background: #fff !important;
     color: #000 !important;
     /* Black prints faster */
-    -webkit-box-shadow: none !important;
-            box-shadow: none !important;
+    box-shadow: none !important;
     text-shadow: none !important;
   }
+  
   a,
   a:visited {
     text-decoration: underline;
   }
+  
   a[href]::after {
     content: " (" attr(href) ")";
   }
+  
   abbr[title]::after {
     content: " (" attr(title) ")";
   }
+  
   /*
   * Don't show links that are fragment identifiers,
   * or use the `javascript:` pseudo protocol
@@ -423,14 +423,17 @@ https://www.phpied.com/delay-loading-your-print-css/
   a[href^="javascript:"]::after {
     content: "";
   }
+  
   pre {
     white-space: pre-wrap !important;
   }
+  
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
+  
   /*
   * Printing Tables:
   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
@@ -438,19 +441,22 @@ https://www.phpied.com/delay-loading-your-print-css/
   thead {
     display: table-header-group;
   }
+  
   tr,
   img {
     page-break-inside: avoid;
   }
+  
   p,
   h2,
   h3 {
     orphans: 3;
     widows: 3;
   }
+  
   h2,
   h3 {
     page-break-after: avoid;
   }
 }
-/*# sourceMappingURL=main.css.map */
+
