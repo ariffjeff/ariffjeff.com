@@ -1,4 +1,5 @@
-/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
 * What follows is the result of much research on cross-browser styling.
 * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -75,20 +76,32 @@ textarea {
 }
 
 /* ==========================================================================
-Browser Upgrade Prompt
-========================================================================== */
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
-/* ==========================================================================
 Author's custom styles
 ========================================================================== */
-/* ------------------------------------- Variables ------------------------------------- */
-/* ------------------------------------- Global ------------------------------------- */
+html {
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  background-color: black;
+}
+
+body {
+  height: 100vh;
+}
+
+#bg {
+  background-image: url("../img/highRes/duckFactory_still.jpg");
+  -webkit-filter: blur(8px);
+          filter: blur(8px);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -10;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 #homeLogo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -99,6 +112,9 @@ Author's custom styles
   background-color: #181818;
   -webkit-transition: .3s;
   transition: .3s;
+  mix-blend-mode: screen;
+  position: relative;
+  z-index: 10;
 }
 
 #homeLogo div {
@@ -128,82 +144,19 @@ Author's custom styles
   background-color: white;
 }
 
-body {
-  font-family: arial;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  color: #e2e6e7;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-}
-
-img {
-  width: 100%;
-}
-
-.button {
-  border-radius: 5px;
-  font-size: 1em;
-  padding: 0;
-  padding: 1.5vw 2.5vw;
+p {
   color: white;
-  -webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 0px 5px rgba(0, 0, 0, 0.4);
+  letter-spacing: .5px;
+  font-size: 15px;
 }
 
-.button-green {
-  background-color: #71a344;
-}
-
-.button-green:hover {
-  background-color: #5b7c35;
-}
-
-.button-blue {
-  background-color: #7fa5c3;
-}
-
-.button-blue:hover {
-  background-color: #6b8da3;
-}
-
-/* ------------------------------------- Nav ------------------------------------- */
-nav {
-  background-color: #99c658;
-  text-align: center;
-}
-
-#navBorder {
-  background-color: #7fa5c3;
-  height: 12px;
-  -webkit-box-shadow: 0px 5px 5px #b8c4cb;
-          box-shadow: 0px 5px 5px #b8c4cb;
-}
-
-nav a {
-  color: #f8f9f9;
-}
-
-nav li {
-  padding: 10px 0;
-}
-
-/* ------------------------------------- Header ------------------------------------- */
-header {
-  margin: 6vw 3vw;
+#content {
+  position: absolute;
+  top: calc(50% + 43px);
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -214,168 +167,31 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
 }
 
-header a {
-  width: 40px;
-  margin: 0 10px;
+#content img {
+  width: 400px;
+  margin-top: 30px;
+  -webkit-transition: .6s;
+  transition: .6s;
 }
 
-header h1 {
-  color: #212a34;
-  font-size: 5vw;
+#content img:hover {
+  width: 55vw;
 }
 
-header svg {
-  width: 40px;
-}
-
-header svg:hover {
-  opacity: .7;
-}
-
-header img {
-  width: 100%;
-}
-
-#icons {
-  margin-top: 7vw;
+#computer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80px;
-}
-
-/* ------------------------------------- Main ------------------------------------- */
-#mainImages {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: wrap;
-      flex-flow: wrap;
-  margin: 1.5vw 0vw;
-}
-
-#mainImages div {
-  margin: 1.5vw 3vw;
-}
-
-main {
-  text-align: center;
-  /* For button */
-}
-
-main a {
-  margin: 35px;
-  display: inline-block;
-}
-
-/* ------------------------------------- Footer ------------------------------------- */
-footer {
-  background-color: #7fa5c3;
-  padding: 5vw 5vw;
-  -webkit-box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.4);
-}
-
-footer, footer ul {
-  color: #f8f9f9;
-}
-
-footer a {
-  color: #c4e169;
-}
-
-footer ul, footer p {
-  margin: 10vw 0;
-}
-
-footer h2 {
-  margin-bottom: -6vw;
-}
-
-footer li:nth-child(1) {
-  color: #525d68;
-}
-
-/* ------------------------------------- Media Queries ------------------------------------- */
-@media (min-width: 768px) {
-  nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  nav li {
-    padding: 20px 0 60px 0;
-  }
-  header h1 {
-    font-size: 40px;
-  }
-  header {
-    margin-bottom: 0;
-  }
-  #icons {
-    margin-top: 10px;
-  }
-  #mainImages {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row;
-    margin: 0 .5vw;
-  }
-  #mainImages div {
-    margin: 1.5vw .5vw;
-    padding: 0 .5vw;
-  }
-  picture {
-    margin: .5vw;
-  }
-  footer ul, footer p {
-    margin: 4vw 0;
-  }
-  footer h2 {
-    margin-bottom: -2vw;
-  }
-  footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  footer p {
-    max-width: 26vw;
-  }
-  footer {
-    padding-bottom: 0vw;
-  }
-}
-
-@media (min-width: 992px) {
-  nav ul {
-    padding: 0 15vw;
-  }
-  footer ul, footer p {
-    margin: 3vw 0;
-  }
-}
-
-@media (min-width: 1200px) {
-  footer {
-    padding: 0 10vw;
-    padding-top: 3vw;
-  }
+  width: 400px;
 }
 
 /* ==========================================================================
@@ -384,7 +200,8 @@ Helper classes
 /*
 * Hide visually and from screen readers
 */
-.hidden {
+.hidden,
+[hidden] {
   display: none !important;
 }
 
@@ -396,33 +213,33 @@ Helper classes
 *    causes content to wrap 1 word per line:
 *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
 */
-.visuallyhidden {
+.sr-only {
   border: 0;
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   height: 1px;
   margin: -1px;
   overflow: hidden;
   padding: 0;
   position: absolute;
-  width: 1px;
   white-space: nowrap;
+  width: 1px;
   /* 1 */
 }
 
 /*
-* Extends the .visuallyhidden class to allow the element
+* Extends the .sr-only class to allow the element
 * to be focusable when navigated to via the keyboard:
 * https://www.drupal.org/node/897638
 */
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
   clip: auto;
   height: auto;
   margin: 0;
   overflow: visible;
   position: static;
-  width: auto;
   white-space: inherit;
+  width: auto;
 }
 
 /*
@@ -443,15 +260,13 @@ Helper classes
 * 2. The use of `table` rather than `block` is only necessary if using
 *    `:before` to contain the top-margins of child elements.
 */
-.clearfix:before,
-.clearfix:after {
+.clearfix::before,
+.clearfix::after {
   content: " ";
-  /* 1 */
   display: table;
-  /* 2 */
 }
 
-.clearfix:after {
+.clearfix::after {
   clear: both;
 }
 
@@ -460,8 +275,14 @@ EXAMPLE Media Queries for Responsive Design.
 These examples override the primary ('mobile first') styles.
 Modify as content requires.
 ========================================================================== */
-@media only screen and (min-width: 35em) {
+@media only screen and (max-width: 768px) {
   /* Style adjustments for viewports that meet the condition */
+  #content {
+    width: 80vw;
+  }
+  #computer img, #computer p {
+    width: 90vw;
+  }
 }
 
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
@@ -475,31 +296,31 @@ https://www.phpied.com/delay-loading-your-print-css/
 ========================================================================== */
 @media print {
   *,
-  *:before,
-  *:after {
-    background: transparent !important;
+  *::before,
+  *::after {
+    background: #fff !important;
     color: #000 !important;
     /* Black prints faster */
     -webkit-box-shadow: none !important;
-    box-shadow: none !important;
+            box-shadow: none !important;
     text-shadow: none !important;
   }
   a,
   a:visited {
     text-decoration: underline;
   }
-  a[href]:after {
+  a[href]::after {
     content: " (" attr(href) ")";
   }
-  abbr[title]:after {
+  abbr[title]::after {
     content: " (" attr(title) ")";
   }
   /*
-    * Don't show links that are fragment identifiers,
-    * or use the `javascript:` pseudo protocol
-    */
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
+  * Don't show links that are fragment identifiers,
+  * or use the `javascript:` pseudo protocol
+  */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
     content: "";
   }
   pre {
@@ -511,9 +332,9 @@ https://www.phpied.com/delay-loading-your-print-css/
     page-break-inside: avoid;
   }
   /*
-    * Printing Tables:
-    * http://css-discuss.incutio.com/wiki/Printing_Tables
-    */
+  * Printing Tables:
+  * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+  */
   thead {
     display: table-header-group;
   }
@@ -532,4 +353,4 @@ https://www.phpied.com/delay-loading-your-print-css/
     page-break-after: avoid;
   }
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=about.css.map */

@@ -116,6 +116,10 @@ Author's custom styles
   padding: 7px;
 }
 
+#homeLogo img {
+  width: 100%;
+}
+
 #homeLogo:hover {
   padding: 13px 0;
 }
