@@ -179,7 +179,7 @@ main {
 
 .bio {
   color: white;
-  font-size: calc(.25vw + 15px);
+  font-size: calc(.5vw + 15px);
   font-weight: normal;
 }
 
