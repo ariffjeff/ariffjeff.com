@@ -93,7 +93,9 @@ body {
 }
 
 #bg {
-  background-image: url("../img/triLight.jpg");
+  background-image: url("../img/tubeLoops_still.jpg");
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -112,7 +114,6 @@ body {
   background-color: #181818;
   -webkit-transition: .3s;
   transition: .3s;
-  mix-blend-mode: screen;
   position: relative;
   z-index: 10;
 }

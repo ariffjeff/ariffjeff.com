@@ -104,7 +104,8 @@ body {
 }
 
 #bg {
-  background-image: url("../img/triLight.jpg");
+  background-image: url("../img/tubeLoops_still.jpg");
+  filter: blur(5px);
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -119,7 +120,6 @@ $homeAnchorHeight: 43px;
   justify-content: center;
   background-color: #181818;
   transition: .3s;
-  mix-blend-mode: screen;
   position: relative;
   z-index: 10;
   
