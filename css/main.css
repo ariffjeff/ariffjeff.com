@@ -290,11 +290,17 @@ nav div > a:hover {
           justify-content: center;
 }
 
+#contactEmail-container {
+  position: relative;
+}
+
 .copy-popup {
   position: absolute;
   display: none;
-  left: -25%;
-  top: 115%;
+  left: 50%;
+  top: 120%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
 }
 
 .copy-popup p, .copy-popup button {

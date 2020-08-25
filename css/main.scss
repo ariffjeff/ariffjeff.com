@@ -276,13 +276,18 @@ $dot-padding: 10px;
   justify-content: center;
 }
 
+#contactEmail-container {
+  position: relative;
+}
+
 
 .copy-popup {
   $paddingWidth: 15px;
   position: absolute;
   display: none;
-  left: -25%;
-  top: 115%;
+  left: 50%;
+  top: 120%;
+  transform: translate(-50%, 0);
 
   p, button {
     background-color: white;
