@@ -1,321 +1,359 @@
-/* General site styles */
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+* What follows is the result of much research on cross-browser styling.
+* Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+* Kroc Camen, and the H5BP dev community and team.
+*/
+/* ==========================================================================
+Base styles: opinionated defaults
+========================================================================== */
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+* Remove text-shadow in selection highlight:
+* https://twitter.com/miketaylr/status/12228805301
+*
+* Vendor-prefixed and regular ::selection selectors cannot be combined:
+* https://stackoverflow.com/a/16982510/7133471
+*
+* Customize the background color to match your design.
+*/
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+* A better looking default horizontal rule
+*/
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+* Remove the gap between audio, canvas, iframes,
+* images, videos and the bottom of their containers:
+* https://github.com/h5bp/html5-boilerplate/issues/440
+*/
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+* Remove default fieldset styles.
+*/
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+* Allow only vertical resizing of textareas.
+*/
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+Author's custom styles
+========================================================================== */
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: black;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+a, button, video {
+  outline: none !important;
+}
+
 body {
-	margin: 0 auto;
-	background: linear-gradient(white, #cccccc);
+  height: 100vh;
 }
 
-#container {
-	margin: 0 auto;
-	max-width: 960px;
-	width: 100%;
+#bg {
+  background-image: url("../img/tubeLoops_still.jpg");
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-#headerBar {
-	height: 60px;
-	width: 100%;
-	max-width: 960px;
-	background-color: #12458a;
-	float: left;
+#homeLogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #181818;
+  -webkit-transition: .3s;
+  transition: .3s;
+  position: relative;
+  z-index: 10;
 }
 
-#headerBar h1 {
-	font-family: 'Raleway', sans-serif;
-	color: #6cd8df;
-	font-size: 40px;
-	margin: 6px 0 0 14px;
-	float: left;
-	letter-spacing: 3px;
+#homeLogo div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 12px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  width: 43px;
+  height: 43px;
+  padding: 7px;
 }
 
-#headerBar h2 {
-	color: white;
-	font-family: Helvetica, sans-serif;
-	font-weight: normal;
-	font-size: 25px;
-	margin: 17px 0 0 12px;
-	float: left;
+#homeLogo img {
+  width: 100%;
 }
 
-#navBar {
-	height: 48px;
-	width: 100%;
-	max-width: 960px;
-	background-color: #363636;
-	float: left;
+#homeLogo:hover {
+  padding: 13px 0;
 }
 
-#navBar nav { /* Center nav links */
-	width: 960px;
-	margin: 0 auto;
-	margin-left: 22%; /* Estimate of nav link centering */
+#homeLogo:hover > div {
+  background-color: white;
 }
 
-nav ul {
-	margin-top: 16px; /* There's an invisble margin I can't find somewhere 
-	that won't let this margin decrease anymore */
+.centerAbsolute {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
-nav ul li {
-	display: inline;
-	float: left;
+#resume-downloads-bg {
+  background-color: black;
+  border-radius: 25px;
+  width: 480px;
+  height: 200px;
+  opacity: 60%;
+  position: relative;
 }
 
-nav ul li a {
-	margin: 9px 25px 0 25px;
-	text-decoration: none; /* Removes link underlines */
-	color: white;
-	font-size: 16px;
-	font-weight: lighter;
-	font-family: Helvetica, sans-serif;
-	letter-spacing: 1px;
+#resume-downloads {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#navLinkFix {
-	margin-right: 0;
+#resume-downloads a {
+  width: 100px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-transition: .15s;
+  transition: .15s;
 }
 
-nav ul li a:hover {
-	color: #00fffc;
+#resume-downloads a:hover {
+  background-color: #ffffffa1;
 }
 
-#mainContent { /* Container */
-	width: 100%;
-	max-width: 960px;
-	float: left;
+/* ==========================================================================
+Helper classes
+========================================================================== */
+/*
+* Hide visually and from screen readers
+*/
+.hidden,
+[hidden] {
+  display: none !important;
 }
 
-#mainContent_Title h3 { /* Welcome! */
-	text-align: center;
-	font-size: 50px;
-	font-family: Helvetica, sans-serif;
-	font-weight: lighter;
-	color: #666666;
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
 }
 
-#warning_mobile {
-	display: none; 
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
 }
 
-p {
-	font-family: Helvetica, sans-serif;	
-	text-align: center;
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+.invisible {
+  visibility: hidden;
 }
 
-#resumeButtons {
-	/* display: table;
-	margin: auto; */
-	display: flex;
-    justify-content: center;
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
 }
 
-#resumeButtons a {
-	margin: 0 3%;
-	padding: 10px;
-    border-radius: 15px;
+.clearfix::after {
+  clear: both;
 }
 
-#resumeButtons a:hover {
-	background-color: #d8d8d8;
+/* ==========================================================================
+EXAMPLE Media Queries for Responsive Design.
+These examples override the primary ('mobile first') styles.
+Modify as content requires.
+========================================================================== */
+@media only screen and (max-width: 550px) {
+  #resume-container {
+    top: calc(50% + 43px);
+  }
+  #resume-downloads-bg {
+    width: 180px;
+    height: 580px;
+  }
+  #resume-downloads {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #resume-downloads a {
+    margin: 10px;
+  }
 }
 
-#resumeButtons img {
-	width: 100px;
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
 }
 
-#button-PDF {
-	border: solid #6cd8df 2px;
-	border-radius: 10px;
-	width: 300px;
-	height: 53px;
+/* ==========================================================================
+Print styles.
+Inlined to avoid the additional HTTP request:
+https://www.phpied.com/delay-loading-your-print-css/
+========================================================================== */
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+  /*
+  * Don't show links that are fragment identifiers,
+  * or use the `javascript:` pseudo protocol
+  */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
+  * Printing Tables:
+  * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+  */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
 }
-
-#button-PDF img {
-	margin-left: 30px;
-	margin-top: 11px;
-	float: left;
-}
-
-#resumeButtons h5 {
-	font-size: 36px;
-	font-weight: normal;
-	font-family: Helvetica, sans-serif;
-	color: #00a3c0;
-	margin-top: 8px;
-	margin-left: 10px;
-	margin-bottom: 0;
-	float: left;
-}
-
-#subContent {
-	margin-left: 40px;
-	float: left;
-	margin-top: 40px;
-	width: 90%;
-}
-
-#subContent div {
-	margin-bottom: 25px;
-    display: flex;
-    justify-content: center;
-}
-
-#subContent h4, #subContent p {
-	font-family: Helvetica, sans-serif;
-	margin-top: 0;
-	margin-bottom: 3px;
-}
-
-#subContent h4 {
-	font-weight: normal;
-	letter-spacing: 0.5px;
-	font-size: 32px;
-}
-
-#subContent p {
-	font-weight: lighter;
-	font-size: 24px;
-}
-
-footer {
-	float: left;
-	margin-top: 4px;
-	width: 100%;
-	max-width: 960px;
-	height: auto;
-	padding-bottom: 15px;
-	background-color: #363636;
-}
-
-footer ul {
-	padding: 0;
-	margin-left: 25px;
-	margin-bottom: 52px; /* This is a cheap way of forcing the bottom text
-	below the links */
-}
-
-footer ul li {
-	display: inline;
-	float: left;
-	border-bottom: 1px #55c0cd solid;
-	padding-bottom: 5px;
-}
-
-footer ul li a {
-	margin: 0px 25px 0 0px;
-	text-decoration: none; /* Removes link underlines */
-	color: #55c0cd;
-	font-size: 20px;
-	font-weight: lighter;
-	font-family: Helvetica, sans-serif;
-	letter-spacing: 1px;
-}
-
-footer ul li a:hover {
-	color: #00fffc;
-}
-
-footer h6 {
-	float: left;
-	margin: 0 10px 0 25px;
-	color: white;
-	font-size: 13px;
-	font-family: Helvetica, sans-serif;
-	font-weight: lighter;
-	letter-spacing: 0.5px;
-}
-
-/* Mobile Styles */
-@media screen and (max-width: 500px) {
-	#navBar nav {
-		margin-left: 0;
-	}
-
-	nav ul {
-		padding-left: 15px;
-	}
-
-	nav ul li a {
-		margin-right: 36px;
-		margin-left: 0;
-	}
-
-	#warning_mobile {
-		display: block; 
-	}
-
-	footer ul {
-		margin-left: 15px;
-	}
-
-	footer ul li a {
-		font-size: 16.5px;
-	}
-
-	footer h6 {
-		margin-left: 15px;
-	}
-
-	#mainContent_Title h3 {
-		margin-top: 25px;
-	}
-
-	#subContent {
-		margin-left: 15px;
-		margin-top: 40px;
-	}
-
-	#subContent h4 {
-		font-size: 22px;
-	}
-
-	#subContent p {
-		font-size: 16px;
-	}
-}
-
-/* Tablet Styles */
-@media screen and (min-width: 501px) and (max-width: 949px) {
-	#navBar nav {
-		margin-left: 0;
-	}
-
-	nav ul {
-		padding-left: 15px;
-	}
-
-	nav ul li a {
-		margin-right: 36px;
-		margin-left: 0;
-	}
-
-	#warning_mobile {
-		display: block; 
-	}
-
-	#subContent {
-		margin-left: 25px;
-		margin-top: 40px;
-	}
-
-	#subContent h4 {
-		font-size: 26px;
-	}
-
-	#subContent p {
-		font-size: 20px;
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*# sourceMappingURL=resume.css.map */

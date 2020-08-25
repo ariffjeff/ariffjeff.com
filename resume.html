@@ -1,99 +1,54 @@
 <!doctype html>
-<html>
-    <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127160822-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+<html class="no-js" lang="en">
 
-            gtag('config', 'UA-127160822-1');
-        </script>
+<head>
+  <meta charset="utf-8">
+  <title>Ariff Jeff's Resume</title>
+  <meta name="description" content="The most up-to-date version of Ariff's resume.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/resume.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  
+  <meta name="theme-color" content="#fafafa">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/fonts/fonts.css"> <!-- Must be before main stylesheet -->
-        <link rel="stylesheet" type="text/css" href="css/resume.css">
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet" type="text/css">
-        <title>Ariff's Resume</title>
-        <meta name="description" content="Ariff's resume. Regularly revised and updated with new information.">
-    </head>
-    <body>
-        <div id="container">
-            <div id="headerBar">
-                <header>
-                    <h1>AJ</h1>
-                    <h2>ARIFF JEFF</h2>
-                </header>
-            </div>
+<body>
+  <div id="bg"></div>
+  <a id="homeLogo" href="/">
+    <div>
+      <img alt="Home" src="/vector/logo_aj.svg">
+    </div>
+  </a>
+  <main>
+    <div id="resume-container" class="centerAbsolute">
+      <div id="resume-downloads-bg"></div>
+      <div id="resume-downloads" class="centerAbsolute">
+        <a href="/resume_ariffJeff.pdf"><img src="/vector/dl_pdf.svg"></a>
+        <a href="/resume_ariffJeff_print.pdf"><img src="/vector/dl_pdf_print.svg"></a>
+        <a href="/resume_ariffJeff_print.docx"><img src="/vector/dl_docx_print.svg"></a>
+      </div>
+    </div>
+  </main>
+  
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-127160822-1', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
 
-            <div id="navBar">
-                <nav>
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/portfolio.html">Portfolio 2D/3D</a></li>
-                        <!-- <li><a href="/contact.html">Contact</a></li> -->
-                        <li><a target="_blank" rel="noopener noreferrer" href="/questersWay/index.html">Portfolio Web</a></li>
-                        <li><a href="/resume.html" id="navLinkFix">Resume</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div id="mainContent">
-                <div id="mainContent_Title">
-                    <h3>Ariff's Resume</h3>
-                    <p id="warning_mobile">Sorry mobile users, I know this page is not mobile friendly. It will be fixed.</p>
-                </div>
-
-                <!-- <div id="resumeButtons">
-                    <a href="resume_ariffJeff.pdf" download=""> 
-                        <div id="button-PDF">
-                            <img src="img/DownArrow.png" alt="PDF button download arrow" width="41" height="31">
-                            <h5>PDF - Web</h5>
-                        </div>
-                    </a>
-                    <a href="resume_ariffJeff_print.pdf" download="">
-                        <div id="button-PDF">
-                            <img src="img/DownArrow.png" alt="PDF button download arrow" width="41" height="31">
-                            <h5>PDF - Print</h5>
-                        </div>
-                    </a>
-                </div> -->
-
-                <div id="resumeButtons">
-                    <a href="resume_ariffJeff.pdf" download=""> <!-- Blank download attribute defaults to filename -->
-                        <img src="vector/dl_pdf.svg" alt="Download resume (PDF)">
-                    </a>
-                    <a href="resume_ariffJeff_print.pdf" download="">
-                        <img src="vector/dl_pdf_print.svg" alt="Download resume (PDF for print)">
-                    </a>
-                    <!-- <a href="resume_ariffJeff.docx" download="">
-                        <img src="vector/dl_docx.svg" alt="Download resume (docx)">
-                    </a> -->
-                    <a href="resume_ariffJeff_print.docx" download="">
-                        <img src="vector/dl_docx_print.svg" alt="Download resume (docx for print)">
-                    </a>
-                </div>
-            </div>
-
-            <div id="subContent">
-                <div>
-                    <embed src="resume_ariffJeff.pdf" type="application/pdf" width="800" height="1100"/>
-                </div>
-
-                <footer>
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/portfolio.html">Portfolio 2D/3D</a></li>
-                        <!-- <li><a href="/contact.html">Contact</a></li> -->
-                        <li><a target="_blank" rel="noopener noreferrer" href="/questersWay/index.html">Portfolio Web</a></li>
-                        <li><a href="/resume.html">Resume</a></li>
-                    </ul>
-
-                    <h6>Designed by Ariff Jeff for Digital Media &amp; Design at UConn. Web Design final project.</h6>
-                </footer>
-            </div>
-        </div>
-    </body>
 </html>
