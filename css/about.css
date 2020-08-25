@@ -89,6 +89,10 @@ body {
   height: 100vh;
 }
 
+a, button, video {
+  outline: none !important;
+}
+
 #bg {
   background-image: url("../img/highRes/duckFactory_still.jpg");
   -webkit-filter: blur(8px);
