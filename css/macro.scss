@@ -103,17 +103,6 @@ a, button, video {
 
 // ================================================================
 
-#bg {
-  background-image: url("../img/");
-  filter: blur(5px);
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
 $homeAnchorHeight: 43px;
 #homeLogo {
   display: flex;

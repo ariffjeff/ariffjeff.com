@@ -92,18 +92,6 @@ a, button, video {
   outline: none !important;
 }
 
-#bg {
-  background-image: url("../img/");
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
 #homeLogo {
   display: -webkit-box;
   display: -ms-flexbox;
