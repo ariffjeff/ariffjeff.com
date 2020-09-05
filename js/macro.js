@@ -25,6 +25,7 @@
 // });
 
 // only works with node.js 
+// https://stackoverflow.com/questions/31274329/get-list-of-filenames-in-folder-with-javascript
 // var moduleName = 'require';
 // require([moduleName], function(fs){
 //     // var files = fs.readdirSync('/img/macro/');
