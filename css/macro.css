@@ -235,6 +235,20 @@ EXAMPLE Media Queries for Responsive Design.
 These examples override the primary ('mobile first') styles.
 Modify as content requires.
 ========================================================================== */
+@media only screen and (max-width: 768px) {
+  #macroGrid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  #macroGrid {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }

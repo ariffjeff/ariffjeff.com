@@ -242,8 +242,16 @@ These examples override the primary ('mobile first') styles.
 Modify as content requires.
 ========================================================================== */
 
-@media only screen and (max-width: 550px) {
-  
+@media only screen and (max-width: 768px) {
+  #macroGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  #macroGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 @media print,
