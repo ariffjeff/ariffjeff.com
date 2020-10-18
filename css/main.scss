@@ -190,6 +190,7 @@ main {
   border-radius: 15px;
 }
 
+$mobileFix_fontSize: 80px;
 .vidLink {
   // must be relative so text can be center positioned.
   position: relative;
@@ -205,8 +206,15 @@ main {
       top: 85%;
     }
   }
+
+  h3 {
+    // set for later mobile fix
+    font-size: $mobileFix_fontSize;
+  }
 }
 
+$mobileFix_vidWidth: 300px;
+$mobileFix_vidBox: rgba(0, 0, 0, 0.479) 0 0 5px;
 nav {
   font-size: 20px;
   margin: 50px 0;
@@ -218,8 +226,8 @@ nav {
   }
 
   video {
-    width: 300px;
-    box-shadow: rgba(0, 0, 0, 0.479) 0 0 5px;
+    width: $mobileFix_vidWidth;
+    box-shadow: $mobileFix_vidBox;
     transition: .4s;
 
     &:hover {
@@ -492,6 +500,27 @@ $dot-padding: 10px;
       & *:not(:first-child):not(:last-child) {
         margin: 15px 0;
       }
+    }
+
+    // prevent hover effects on mobile
+    .vidLink {
+      &:hover {
+        box-shadow: $mobileFix_vidBox;
+
+        & > h3 {
+          mix-blend-mode: initial;
+          font-size: $mobileFix_fontSize;
+          top: 50%;
+        }
+      }
+
+      video:hover {
+        width: $mobileFix_vidWidth;
+      }
+    }
+
+    .copy-popup {
+      left: 200%;
     }
   }
 

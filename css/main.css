@@ -207,6 +207,10 @@ main {
   top: 85%;
 }
 
+.vidLink h3 {
+  font-size: 80px;
+}
+
 nav {
   font-size: 20px;
   margin: 50px 0;
@@ -526,6 +530,21 @@ nav div > a:hover {
   }
   #bio-stack *:not(:first-child):not(:last-child) {
     margin: 15px 0;
+  }
+  .vidLink:hover {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.479) 0 0 5px;
+            box-shadow: rgba(0, 0, 0, 0.479) 0 0 5px;
+  }
+  .vidLink:hover > h3 {
+    mix-blend-mode: initial;
+    font-size: 80px;
+    top: 50%;
+  }
+  .vidLink video:hover {
+    width: 300px;
+  }
+  .copy-popup {
+    left: 200%;
   }
 }
 
