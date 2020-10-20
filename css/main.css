@@ -209,6 +209,7 @@ main {
 
 .vidLink h3 {
   font-size: 80px;
+  text-shadow: rgba(0, 0, 0, 0.8) 0px 0px 4px;
 }
 
 nav {
