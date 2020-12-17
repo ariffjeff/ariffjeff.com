@@ -214,7 +214,7 @@ main {
 
 nav {
   font-size: 20px;
-  margin: 50px 0;
+  margin-top: 50px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -258,6 +258,19 @@ nav div > a {
 
 nav div > a:hover {
   opacity: 85%;
+}
+
+#pages {
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  padding: 0 75px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#pages a {
+  margin-bottom: 20px;
 }
 
 #social {
@@ -501,22 +514,6 @@ nav div > a:hover {
   These examples override the primary ('mobile first') styles.
   Modify as content requires.
   ========================================================================== */
-@media only screen and (max-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-  nav {
-    margin: 30px 0;
-  }
-  #pages {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  #pages a:not(:first-child) {
-    margin-top: 20px;
-  }
-}
-
 @media only screen and (max-width: 768px) {
   /* Style adjustments for viewports that meet the condition */
   #bio-line {
@@ -555,6 +552,24 @@ nav div > a:hover {
         -ms-flex-align: initial;
             align-items: initial;
     height: initial;
+  }
+  #social {
+    margin-bottom: 70px;
+  }
+  nav {
+    margin: 30px 0;
+  }
+  #pages {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #pages a:not(:first-child) {
+    margin-top: 20px;
+  }
+  #pages a {
+    margin-bottom: 0;
   }
 }
 
