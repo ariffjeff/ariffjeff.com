@@ -1,10 +1,10 @@
 {
-  "name": " ",
+  "name": "ariffjeff.com",
   "version": "0.0.1",
-  "description": "",
+  "description": "Ariff Jeff's portfolio central hub",
   "keywords": "",
   "license": "",
-  "author": "",
+  "author": "Ariff Jeff <ariff.jeff@uconn.edu> (ariffjeff.com)",
   "scripts": {
     "build": "parcel build index.html",
     "dev": "parcel index.html --open",
