@@ -190,12 +190,26 @@ main {
   border-radius: 15px;
 }
 
-$mobileFix_fontSize: 80px;
-.vidLink {
+$mobileFix_vidWidth: 300px;
+$mobileFix_vidBox: rgba(0, 0, 0, 0.479) 0 0 5px;
+.main3Dlink {
   // must be relative so text can be center positioned.
   position: relative;
-  box-shadow: rgba(0, 0, 0, 0.479) 0 0 5px;
-  transition: .2s;
+}
+
+$transTime: .4s;
+#main3Dlink_video {
+  transition: $transTime; // box shadow
+
+  video {
+    width: $mobileFix_vidWidth;
+    box-shadow: $mobileFix_vidBox;
+    transition: $transTime; // width
+
+    &:hover {
+      width: 600px;
+    }
+  }
   
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.479) 5px 5px 15px;
@@ -205,17 +219,18 @@ $mobileFix_fontSize: 80px;
       font-size: 60px;
       top: 85%;
     }
-  }
+  } 
+}
 
-  h3 {
-    // set for later mobile fix
-    font-size: $mobileFix_fontSize;
-    text-shadow: rgba(0, 0, 0, 0.8) 0px 0px 4px;
+#main3Dlink_img {
+  display: none;
+
+  img {
+    width: $mobileFix_vidWidth;
+    box-shadow: $mobileFix_vidBox;
   }
 }
 
-$mobileFix_vidWidth: 300px;
-$mobileFix_vidBox: rgba(0, 0, 0, 0.479) 0 0 5px;
 nav {
   font-size: 20px;
   margin-top: 50px;
@@ -224,16 +239,6 @@ nav {
 
   & > a {
     margin-bottom: 25px;
-  }
-
-  video {
-    width: $mobileFix_vidWidth;
-    box-shadow: $mobileFix_vidBox;
-    transition: .4s;
-
-    &:hover {
-      width: 600px;
-    }
   }
   
   h3 {
@@ -244,6 +249,7 @@ nav {
     transform: translate(-50%, -50%);
     font-size: 80px;
     transition: .465s;
+    text-shadow: rgba(0, 0, 0, 0.8) 0px 0px 4px;
   }
 
   div > a {
@@ -498,21 +504,12 @@ $dot-padding: 10px;
       }
     }
 
-    // prevent hover effects on mobile
-    .vidLink {
-      &:hover {
-        box-shadow: $mobileFix_vidBox;
+    #main3Dlink_video {
+      display: none;
+    }
 
-        & > h3 {
-          mix-blend-mode: initial;
-          font-size: $mobileFix_fontSize;
-          top: 50%;
-        }
-      }
-
-      video:hover {
-        width: $mobileFix_vidWidth;
-      }
+    #main3Dlink_img {
+      display: initial;
     }
 
     .copy-popup {

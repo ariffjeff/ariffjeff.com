@@ -188,28 +188,46 @@ main {
   border-radius: 15px;
 }
 
-.vidLink {
+.main3Dlink {
   position: relative;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.479) 0 0 5px;
-          box-shadow: rgba(0, 0, 0, 0.479) 0 0 5px;
-  -webkit-transition: .2s;
-  transition: .2s;
 }
 
-.vidLink:hover {
+#main3Dlink_video {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#main3Dlink_video video {
+  width: 300px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.479) 0 0 5px;
+          box-shadow: rgba(0, 0, 0, 0.479) 0 0 5px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#main3Dlink_video video:hover {
+  width: 600px;
+}
+
+#main3Dlink_video:hover {
   -webkit-box-shadow: rgba(0, 0, 0, 0.479) 5px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.479) 5px 5px 15px;
 }
 
-.vidLink:hover > h3 {
+#main3Dlink_video:hover > h3 {
   mix-blend-mode: overlay;
   font-size: 60px;
   top: 85%;
 }
 
-.vidLink h3 {
-  font-size: 80px;
-  text-shadow: rgba(0, 0, 0, 0.8) 0px 0px 4px;
+#main3Dlink_img {
+  display: none;
+}
+
+#main3Dlink_img img {
+  width: 300px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.479) 0 0 5px;
+          box-shadow: rgba(0, 0, 0, 0.479) 0 0 5px;
 }
 
 nav {
@@ -228,18 +246,6 @@ nav > a {
   margin-bottom: 25px;
 }
 
-nav video {
-  width: 300px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.479) 0 0 5px;
-          box-shadow: rgba(0, 0, 0, 0.479) 0 0 5px;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-nav video:hover {
-  width: 600px;
-}
-
 nav h3 {
   pointer-events: none;
   position: absolute;
@@ -250,6 +256,7 @@ nav h3 {
   font-size: 80px;
   -webkit-transition: .465s;
   transition: .465s;
+  text-shadow: rgba(0, 0, 0, 0.8) 0px 0px 4px;
 }
 
 nav div > a {
@@ -529,17 +536,11 @@ nav div > a:hover {
   #bio-stack *:not(:first-child):not(:last-child) {
     margin: 15px 0;
   }
-  .vidLink:hover {
-    -webkit-box-shadow: rgba(0, 0, 0, 0.479) 0 0 5px;
-            box-shadow: rgba(0, 0, 0, 0.479) 0 0 5px;
+  #main3Dlink_video {
+    display: none;
   }
-  .vidLink:hover > h3 {
-    mix-blend-mode: initial;
-    font-size: 80px;
-    top: 50%;
-  }
-  .vidLink video:hover {
-    width: 300px;
+  #main3Dlink_img {
+    display: initial;
   }
   .copy-popup {
     left: 200%;

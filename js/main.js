@@ -41,7 +41,7 @@ function whichTransitionEvent(){
 
 $(document).ready(function(){
   // play video on hover
-  var vid = $('.vidLink').children();
+  var vid = $('#main3Dlink_video').children();
   vid.on('mouseenter focus', function() {
     vid.get(0).play();
   })
