@@ -160,8 +160,8 @@ $homeAnchorHeight: 43px;
 #resume-downloads-bg {
   background-color: black;
   border-radius: 25px;
-  width: 480px;
-  height: 200px;
+  width: 500px;
+  height: 195px;
   // can't use mix-blend-mode since transform: translate(-50%, -50%); breaks it.
   opacity: 60%;
   // z-index: 1;
@@ -175,7 +175,7 @@ $homeAnchorHeight: 43px;
   a {
     width: 100px;
     margin: 20px;
-    padding: 10px;
+    padding: 6px;
     border-radius: 10px;
     transition: .15s;
 
