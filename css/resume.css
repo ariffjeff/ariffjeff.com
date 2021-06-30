@@ -177,8 +177,8 @@ body {
 
 #resume-downloads a {
   width: 100px;
-  margin: 20px;
-  padding: 6px;
+  margin: 15px;
+  padding: 10px;
   border-radius: 10px;
   -webkit-transition: .15s;
   transition: .15s;
