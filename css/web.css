@@ -1,19 +1,62 @@
-@use 'global';
-@use 'homeBanner';
+* {
+  text-decoration: none;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+a, button, video {
+  outline: none !important;
+}
+
+#homeBanner {
+  display: flex;
+  justify-content: center;
+  background-color: #181818;
+  transition: 0.3s;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+#homeBanner div {
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  transition: 0.3s;
+  width: 43px;
+  height: 43px;
+  padding: 7px;
+}
+#homeBanner img {
+  width: 100%;
+}
+#homeBanner:hover {
+  padding: 13px 0;
+}
+#homeBanner:hover > div {
+  background-color: white;
+}
+
+main {
+  padding-top: calc(43px + 7px * 2);
+}
 
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
-
 /* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
 * What follows is the result of much research on cross-browser styling.
 * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
 * Kroc Camen, and the H5BP dev community and team.
 */
-
 /* ==========================================================================
 Base styles: opinionated defaults
 ========================================================================== */
-
 html {
   color: #222;
   font-size: 1em;
@@ -29,7 +72,6 @@ html {
 *
 * Customize the background color to match your design.
 */
-
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -43,7 +85,6 @@ html {
 /*
 * A better looking default horizontal rule
 */
-
 hr {
   display: block;
   height: 1px;
@@ -58,7 +99,6 @@ hr {
 * images, videos and the bottom of their containers:
 * https://github.com/h5bp/html5-boilerplate/issues/440
 */
-
 audio,
 canvas,
 iframe,
@@ -71,7 +111,6 @@ video {
 /*
 * Remove default fieldset styles.
 */
-
 fieldset {
   border: 0;
   margin: 0;
@@ -81,7 +120,6 @@ fieldset {
 /*
 * Allow only vertical resizing of textareas.
 */
-
 textarea {
   resize: vertical;
 }
@@ -89,7 +127,6 @@ textarea {
 /* ==========================================================================
 Author's custom styles
 ========================================================================== */
-
 body {
   height: 100vh;
 }
@@ -105,49 +142,54 @@ body {
   background-size: cover;
 }
 
-.centerAbsolute {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+main {
+  padding-top: calc((43px + 7px * 2) + 26px);
 }
 
-#resume-downloads-bg {
-  background-color: black;
-  border-radius: 25px;
-  width: 500px;
-  height: 195px;
-  // can't use mix-blend-mode since transform: translate(-50%, -50%); breaks it.
-  opacity: 60%;
-  // z-index: 1;
-  position: relative;
-}
-
-#resume-downloads {
+#projects {
+  margin: auto;
+  padding: 0 15px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+}
 
-  a {
-    width: 100px;
-    margin: 15px;
-    padding: 10px;
-    border-radius: 10px;
-    transition: .15s;
-
-    &:hover {
-      background-color: #ffffffa1;
-    }
-  }
+.prj {
+  max-width: 45%;
+  position: relative;
+  margin: 0px 5px 15px 5px;
+  text-align: center;
+}
+.prj div {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.2s;
+}
+.prj:hover > div {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.prj img {
+  max-width: 50%;
+  margin-bottom: 10px;
+}
+.prj p {
+  color: #000;
+}
+.prj > p {
+  font-weight: bold;
+  font-size: 120%;
 }
 
 /* ==========================================================================
 Helper classes
 ========================================================================== */
-
 /*
 * Hide visually and from screen readers
 */
-
 .hidden,
 [hidden] {
   display: none !important;
@@ -161,7 +203,6 @@ Helper classes
 *    causes content to wrap 1 word per line:
 *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
 */
-
 .sr-only {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -180,7 +221,6 @@ Helper classes
 * to be focusable when navigated to via the keyboard:
 * https://www.drupal.org/node/897638
 */
-
 .sr-only.focusable:active,
 .sr-only.focusable:focus {
   clip: auto;
@@ -195,7 +235,6 @@ Helper classes
 /*
 * Hide visually and from screen readers, but maintain layout
 */
-
 .invisible {
   visibility: hidden;
 }
@@ -211,7 +250,6 @@ Helper classes
 * 2. The use of `table` rather than `block` is only necessary if using
 *    `:before` to contain the top-margins of child elements.
 */
-
 .clearfix::before,
 .clearfix::after {
   content: " ";
@@ -227,82 +265,57 @@ EXAMPLE Media Queries for Responsive Design.
 These examples override the primary ('mobile first') styles.
 Modify as content requires.
 ========================================================================== */
-
-@media only screen and (max-width: 550px) {
-  #resume-container {
-    top: calc(50% + #{$homeAnchorHeight});
-  }
-
-  #resume-downloads-bg {
-    width: 180px;
-    height: 580px;
-  }
-
-  #resume-downloads {
-    flex-direction: column;
-
-    a {
-      margin: 10px;
-    }
-  }
-}
-
-@media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
-
 /* ==========================================================================
 Print styles.
 Inlined to avoid the additional HTTP request:
 https://www.phpied.com/delay-loading-your-print-css/
 ========================================================================== */
-
 @media print {
   *,
-  *::before,
-  *::after {
+*::before,
+*::after {
     background: #fff !important;
     color: #000 !important;
     /* Black prints faster */
     box-shadow: none !important;
     text-shadow: none !important;
   }
-  
+
   a,
-  a:visited {
+a:visited {
     text-decoration: underline;
   }
-  
+
   a[href]::after {
     content: " (" attr(href) ")";
   }
-  
+
   abbr[title]::after {
     content: " (" attr(title) ")";
   }
-  
+
   /*
   * Don't show links that are fragment identifiers,
   * or use the `javascript:` pseudo protocol
   */
   a[href^="#"]::after,
-  a[href^="javascript:"]::after {
+a[href^="javascript:"]::after {
     content: "";
   }
-  
+
   pre {
     white-space: pre-wrap !important;
   }
-  
+
   pre,
-  blockquote {
+blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
-  
+
   /*
   * Printing Tables:
   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
@@ -310,22 +323,21 @@ https://www.phpied.com/delay-loading-your-print-css/
   thead {
     display: table-header-group;
   }
-  
+
   tr,
-  img {
+img {
     page-break-inside: avoid;
   }
-  
+
   p,
-  h2,
-  h3 {
+h2,
+h3 {
     orphans: 3;
     widows: 3;
   }
-  
+
   h2,
-  h3 {
+h3 {
     page-break-after: avoid;
   }
-}
-
+}/*# sourceMappingURL=web.css.map */

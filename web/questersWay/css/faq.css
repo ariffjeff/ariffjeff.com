@@ -90,40 +90,26 @@ Author's custom styles
 /* ------------------------------------- Variables ------------------------------------- */
 /* ------------------------------------- Global ------------------------------------- */
 #homeLogo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   background-color: #181818;
-  -webkit-transition: .3s;
-  transition: .3s;
+  transition: 0.3s;
 }
-
 #homeLogo div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   border-radius: 12px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  transition: 0.3s;
   width: 43px;
   height: 43px;
   padding: 7px;
 }
-
 #homeLogo img {
   width: 100%;
 }
-
 #homeLogo:hover {
   padding: 13px 0;
 }
-
 #homeLogo:hover > div {
   background-color: white;
 }
@@ -161,8 +147,7 @@ img {
   padding: 0;
   padding: 1.5vw 2.5vw;
   color: white;
-  -webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 0px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.4);
 }
 
 .button-green {
@@ -202,8 +187,7 @@ nav {
 #navBorder {
   background-color: #7fa5c3;
   height: 12px;
-  -webkit-box-shadow: 0px 5px 5px #b8c4cb;
-          box-shadow: 0px 5px 5px #b8c4cb;
+  box-shadow: 0px 5px 5px #b8c4cb;
 }
 
 nav a {
@@ -217,9 +201,7 @@ nav li {
 /* ------------------------------------- Header ------------------------------------- */
 header {
   padding: 6vw 3vw;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
   background-color: #bcdee3;
   color: #212a34;
@@ -242,34 +224,25 @@ header p {
 
 /* ------------------------------------- Main ------------------------------------- */
 .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   padding-bottom: 3vw;
   background-color: #e0edab;
 }
 
 .infoPanelFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .infoPanel {
   background-color: white;
   padding: 1vw;
-  margin: .5vw 0;
+  margin: 0.5vw 0;
   border: 1px solid #7fa5c3;
-  border-radius: .5vw;
+  border-radius: 0.5vw;
   width: 100%;
   color: #525d68;
 }
@@ -283,16 +256,9 @@ header p {
 }
 
 .buttonFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .buttonFlex a {
@@ -312,13 +278,8 @@ form h3 {
 }
 
 form p {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 form button {
@@ -337,15 +298,9 @@ main input, textarea, .contactDetails ul {
 
 .contactDetails {
   background-color: #f8f9f9;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  flex-wrap: wrap;
+  flex-flow: column;
 }
 
 .contactDetails ul {
@@ -385,98 +340,97 @@ footer li:nth-child(1) {
 /* ------------------------------------- Media Queries ------------------------------------- */
 @media (min-width: 768px) {
   nav > div {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
+
   #navLogo {
     width: 20vw;
   }
+
   nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     width: 80vw;
   }
+
   header h1 {
     font-size: 40px;
   }
+
   header p {
     margin-top: 1vw;
   }
+
   header {
     padding: 3vw 20vw;
   }
+
   #mainImages {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row;
+    flex-flow: row;
   }
+
   .infoPanelFlex {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
+
   .infoPanel {
     width: 47%;
   }
+
   .contactDetails ul {
     margin: 1vw 0;
   }
+
   main {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
+
   .formWidthFix {
     width: 100%;
   }
+
   .contactDetails {
     width: 75%;
     padding-left: 0;
   }
+
   footer ul, footer p {
     margin: 4vw 0;
   }
+
   footer h2 {
     margin-bottom: -2vw;
   }
+
   footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
+
   footer p {
     max-width: 26vw;
   }
+
   footer {
     padding-bottom: 0vw;
   }
 }
-
 @media (min-width: 992px) {
   footer ul, footer p {
     margin: 3vw 0;
   }
+
   button {
     font-size: 1em;
   }
 }
-
 @media (min-width: 1200px) {
   footer {
     padding: 0 10vw;
     padding-top: 3vw;
   }
 }
-
 /* ==========================================================================
 Helper classes
 ========================================================================== */
@@ -562,11 +516,9 @@ Modify as content requires.
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
-
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
-
 /* ==========================================================================
 Print styles.
 Inlined to avoid the additional HTTP request:
@@ -574,61 +526,69 @@ https://www.phpied.com/delay-loading-your-print-css/
 ========================================================================== */
 @media print {
   *,
-  *:before,
-  *:after {
+*:before,
+*:after {
     background: transparent !important;
     color: #000 !important;
     /* Black prints faster */
-    -webkit-box-shadow: none !important;
     box-shadow: none !important;
     text-shadow: none !important;
   }
+
   a,
-  a:visited {
+a:visited {
     text-decoration: underline;
   }
+
   a[href]:after {
     content: " (" attr(href) ")";
   }
+
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
+
   /*
-    * Don't show links that are fragment identifiers,
-    * or use the `javascript:` pseudo protocol
-    */
+  * Don't show links that are fragment identifiers,
+  * or use the `javascript:` pseudo protocol
+  */
   a[href^="#"]:after,
-  a[href^="javascript:"]:after {
+a[href^="javascript:"]:after {
     content: "";
   }
+
   pre {
     white-space: pre-wrap !important;
   }
+
   pre,
-  blockquote {
+blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
+
   /*
-    * Printing Tables:
-    * http://css-discuss.incutio.com/wiki/Printing_Tables
-    */
+  * Printing Tables:
+  * http://css-discuss.incutio.com/wiki/Printing_Tables
+  */
   thead {
     display: table-header-group;
   }
+
   tr,
-  img {
+img {
     page-break-inside: avoid;
   }
+
   p,
-  h2,
-  h3 {
+h2,
+h3 {
     orphans: 3;
     widows: 3;
   }
+
   h2,
-  h3 {
+h3 {
     page-break-after: avoid;
   }
-}
-/*# sourceMappingURL=faq.css.map */
+}/*# sourceMappingURL=faq.css.map */

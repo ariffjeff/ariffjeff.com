@@ -105,38 +105,50 @@ body {
   background-size: cover;
 }
 
-.centerAbsolute {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+main {
+  @include homeBanner.padTopForBannerHover
 }
 
-#resume-downloads-bg {
-  background-color: black;
-  border-radius: 25px;
-  width: 500px;
-  height: 195px;
-  // can't use mix-blend-mode since transform: translate(-50%, -50%); breaks it.
-  opacity: 60%;
-  // z-index: 1;
-  position: relative;
-}
-
-#resume-downloads {
+#projects {
+  margin: auto; // center
+  padding: 0 15px;
   display: flex;
-  justify-content: center;
+  justify-content:center;
+  flex-wrap: wrap;
+}
 
-  a {
-    width: 100px;
-    margin: 15px;
+.prj {
+  max-width: 45%;
+  position: relative;
+  margin: 0px 5px 15px 5px;
+  text-align: center;
+  
+  & div {
+    background-color: rgba($color: rgb(255, 255, 255), $alpha: .6);
+    border-radius: 20px;
     padding: 10px;
-    border-radius: 10px;
-    transition: .15s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .2s;
+}
 
-    &:hover {
-      background-color: #ffffffa1;
-    }
+  &:hover > div {
+    background-color: rgba($color: rgb(255, 255, 255), $alpha: .9);
+  }
+
+  & img {
+    max-width: 50%;
+    margin-bottom: 10px;
+  }
+  
+  & p {
+    color: #000;
+  }
+
+  & > p {
+    font-weight: bold;
+    font-size: 120%;
   }
 }
 
@@ -229,22 +241,7 @@ Modify as content requires.
 ========================================================================== */
 
 @media only screen and (max-width: 550px) {
-  #resume-container {
-    top: calc(50% + #{$homeAnchorHeight});
-  }
-
-  #resume-downloads-bg {
-    width: 180px;
-    height: 580px;
-  }
-
-  #resume-downloads {
-    flex-direction: column;
-
-    a {
-      margin: 10px;
-    }
-  }
+  
 }
 
 @media print,
