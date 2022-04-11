@@ -123,8 +123,6 @@ a, button, video {
 }
 
 .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -142,12 +140,8 @@ a, button, video {
 
 body {
   height: 100vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #bg {
@@ -161,13 +155,8 @@ body {
 }
 
 main {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  flex-direction: column;
   padding: 20px;
 }
 
@@ -179,7 +168,7 @@ main {
 
 .bio {
   color: white;
-  font-size: calc(.5vw + 15px);
+  font-size: calc(0.5vw + 15px);
   font-weight: normal;
 }
 
@@ -193,27 +182,19 @@ main {
 }
 
 #main3Dlink_video {
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-
 #main3Dlink_video video {
   width: 300px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.479) 0 0 5px;
-          box-shadow: rgba(0, 0, 0, 0.479) 0 0 5px;
-  -webkit-transition: 0.4s;
+  box-shadow: rgba(0, 0, 0, 0.479) 0 0 5px;
   transition: 0.4s;
 }
-
 #main3Dlink_video video:hover {
   width: 600px;
 }
-
 #main3Dlink_video:hover {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.479) 5px 5px 15px;
-          box-shadow: rgba(0, 0, 0, 0.479) 5px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.479) 5px 5px 15px;
 }
-
 #main3Dlink_video:hover > h3 {
   mix-blend-mode: overlay;
   font-size: 60px;
@@ -223,59 +204,42 @@ main {
 #main3Dlink_img {
   display: none;
 }
-
 #main3Dlink_img img {
   width: 300px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.479) 0 0 5px;
-          box-shadow: rgba(0, 0, 0, 0.479) 0 0 5px;
+  box-shadow: rgba(0, 0, 0, 0.479) 0 0 5px;
 }
 
 nav {
   font-size: 20px;
   margin-top: 50px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 nav > a {
   margin-bottom: 25px;
 }
-
 nav h3 {
   pointer-events: none;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   font-size: 80px;
-  -webkit-transition: .465s;
-  transition: .465s;
+  transition: 0.465s;
   text-shadow: rgba(0, 0, 0, 0.8) 0px 0px 4px;
 }
-
 nav div > a {
   margin: 0 15px;
 }
-
 nav div > a:hover {
   opacity: 85%;
 }
 
 #pages {
-  -ms-flex-flow: wrap;
-      flex-flow: wrap;
+  flex-flow: wrap;
   padding: 0 75px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 #pages a {
   margin-bottom: 20px;
 }
@@ -283,18 +247,15 @@ nav div > a:hover {
 #social {
   position: relative;
 }
-
 #social a {
   margin: 0 10px;
   width: 40px;
   height: 40px;
   opacity: 90%;
 }
-
 #social a:hover {
   opacity: 70%;
 }
-
 #social img {
   height: 34px;
   max-width: 38px;
@@ -304,15 +265,9 @@ nav div > a:hover {
   background-color: white;
   padding: 10px;
   border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 #contactEmail-container {
@@ -324,28 +279,22 @@ nav div > a:hover {
   display: none;
   left: 50%;
   top: 120%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
 }
-
 .copy-popup p, .copy-popup button {
   background-color: white;
   z-index: 2;
 }
-
 .copy-popup p {
   border-radius: 10px 0 0 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 10px 15px;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
-
 .copy-popup button {
   border: none;
   cursor: pointer;
-  border-left: 1px solid #b8b8b8;
+  border-left: 1px solid rgb(184, 184, 184);
   border-radius: 0 10px 10px 0;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -353,28 +302,21 @@ nav div > a:hover {
           user-select: none;
   padding: 0 15px;
 }
-
 .copy-popup button:hover {
-  -webkit-filter: brightness(90%);
-          filter: brightness(90%);
+  filter: brightness(90%);
 }
-
 .copy-popup button:active {
-  -webkit-filter: brightness(80%);
-          filter: brightness(80%);
+  filter: brightness(80%);
 }
-
 .copy-popup img {
   height: 25px !important;
 }
 
 #contactEmail:hover + .copy-popup, .copy-popup:hover {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: absolute;
-  -webkit-animation: fadeIn .2s;
-          animation: fadeIn .2s;
+  -webkit-animation: fadeIn 0.2s;
+          animation: fadeIn 0.2s;
 }
 
 @-webkit-keyframes fadeIn {
@@ -396,7 +338,6 @@ nav div > a:hover {
     opacity: 100%;
   }
 }
-
 #contactEmail::before {
   content: "";
   display: none;
@@ -412,8 +353,8 @@ nav div > a:hover {
 }
 
 #text_email.anim-copied {
-  -webkit-animation: blip-success .15s;
-          animation: blip-success .15s;
+  -webkit-animation: blip-success 0.15s;
+          animation: blip-success 0.15s;
 }
 
 @-webkit-keyframes blip-success {
@@ -439,26 +380,25 @@ nav div > a:hover {
     background-color: white;
   }
 }
-
 /* ==========================================================================
-  Helper classes
-  ========================================================================== */
+Helper classes
+========================================================================== */
 /*
-  * Hide visually and from screen readers
-  */
+* Hide visually and from screen readers
+*/
 .hidden,
 [hidden] {
   display: none !important;
 }
 
 /*
-  * Hide only visually, but have it available for screen readers:
-  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
-  *
-  * 1. For long content, line feeds are not interpreted as spaces and small width
-  *    causes content to wrap 1 word per line:
-  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
-  */
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
 .sr-only {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -473,10 +413,10 @@ nav div > a:hover {
 }
 
 /*
-  * Extends the .sr-only class to allow the element
-  * to be focusable when navigated to via the keyboard:
-  * https://www.drupal.org/node/897638
-  */
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
 .sr-only.focusable:active,
 .sr-only.focusable:focus {
   clip: auto;
@@ -489,23 +429,23 @@ nav div > a:hover {
 }
 
 /*
-  * Hide visually and from screen readers, but maintain layout
-  */
+* Hide visually and from screen readers, but maintain layout
+*/
 .invisible {
   visibility: hidden;
 }
 
 /*
-  * Clearfix: contain floats
-  *
-  * For modern browsers
-  * 1. The space content is one way to avoid an Opera bug when the
-  *    `contenteditable` attribute is included anywhere else in the document.
-  *    Otherwise it causes space to appear at the top and bottom of elements
-  *    that receive the `clearfix` class.
-  * 2. The use of `table` rather than `block` is only necessary if using
-  *    `:before` to contain the top-margins of child elements.
-  */
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
 .clearfix::before,
 .clearfix::after {
   content: " ";
@@ -517,15 +457,16 @@ nav div > a:hover {
 }
 
 /* ==========================================================================
-  EXAMPLE Media Queries for Responsive Design.
-  These examples override the primary ('mobile first') styles.
-  Modify as content requires.
-  ========================================================================== */
+EXAMPLE Media Queries for Responsive Design.
+These examples override the primary ('mobile first') styles.
+Modify as content requires.
+========================================================================== */
 @media only screen and (max-width: 768px) {
   /* Style adjustments for viewports that meet the condition */
   #bio-line {
     display: none;
   }
+
   #bio-stack {
     display: initial;
   }
@@ -536,35 +477,35 @@ nav div > a:hover {
   #bio-stack *:not(:first-child):not(:last-child) {
     margin: 15px 0;
   }
+
   #main3Dlink_video {
     display: none;
   }
+
   #main3Dlink_img {
     display: initial;
   }
+
   .copy-popup {
     left: 200%;
   }
 }
-
 @media only screen and (max-width: 414px) {
   body {
-    -webkit-box-align: initial;
-        -ms-flex-align: initial;
-            align-items: initial;
+    align-items: initial;
     height: initial;
   }
+
   #social {
     margin-bottom: 70px;
   }
+
   nav {
     margin: 30px 0;
   }
+
   #pages {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   #pages a:not(:first-child) {
     margin-top: 20px;
@@ -573,73 +514,79 @@ nav div > a:hover {
     margin-bottom: 0;
   }
 }
-
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
-
 /* ==========================================================================
-  Print styles.
-  Inlined to avoid the additional HTTP request:
-  https://www.phpied.com/delay-loading-your-print-css/
-  ========================================================================== */
+Print styles.
+Inlined to avoid the additional HTTP request:
+https://www.phpied.com/delay-loading-your-print-css/
+========================================================================== */
 @media print {
   *,
-  *::before,
-  *::after {
+*::before,
+*::after {
     background: #fff !important;
     color: #000 !important;
     /* Black prints faster */
-    -webkit-box-shadow: none !important;
-            box-shadow: none !important;
+    box-shadow: none !important;
     text-shadow: none !important;
   }
+
   a,
-  a:visited {
+a:visited {
     text-decoration: underline;
   }
+
   a[href]::after {
     content: " (" attr(href) ")";
   }
+
   abbr[title]::after {
     content: " (" attr(title) ")";
   }
+
   /*
-    * Don't show links that are fragment identifiers,
-    * or use the `javascript:` pseudo protocol
-    */
+  * Don't show links that are fragment identifiers,
+  * or use the `javascript:` pseudo protocol
+  */
   a[href^="#"]::after,
-  a[href^="javascript:"]::after {
+a[href^="javascript:"]::after {
     content: "";
   }
+
   pre {
     white-space: pre-wrap !important;
   }
+
   pre,
-  blockquote {
+blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
+
   /*
-    * Printing Tables:
-    * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-    */
+  * Printing Tables:
+  * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+  */
   thead {
     display: table-header-group;
   }
+
   tr,
-  img {
+img {
     page-break-inside: avoid;
   }
+
   p,
-  h2,
-  h3 {
+h2,
+h3 {
     orphans: 3;
     widows: 3;
   }
+
   h2,
-  h3 {
+h3 {
     page-break-after: avoid;
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

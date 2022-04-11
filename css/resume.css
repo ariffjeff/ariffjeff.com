@@ -98,8 +98,7 @@ body {
 
 #bg {
   background-image: url("../img/tubeLoops_still.jpg");
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
+  filter: blur(5px);
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -109,42 +108,28 @@ body {
 }
 
 #homeLogo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   background-color: #181818;
-  -webkit-transition: .3s;
-  transition: .3s;
+  transition: 0.3s;
   position: relative;
   z-index: 10;
 }
-
 #homeLogo div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   border-radius: 12px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  transition: 0.3s;
   width: 43px;
   height: 43px;
   padding: 7px;
 }
-
 #homeLogo img {
   width: 100%;
 }
-
 #homeLogo:hover {
   padding: 13px 0;
 }
-
 #homeLogo:hover > div {
   background-color: white;
 }
@@ -153,8 +138,7 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 #resume-downloads-bg {
@@ -167,25 +151,18 @@ body {
 }
 
 #resume-downloads {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 #resume-downloads a {
   width: 100px;
   margin: 15px;
   padding: 10px;
   border-radius: 10px;
-  -webkit-transition: .15s;
-  transition: .15s;
+  transition: 0.15s;
 }
-
 #resume-downloads a:hover {
-  background-color: #ffffffa1;
+  background-color: rgba(255, 255, 255, 0.631372549);
 }
 
 /* ==========================================================================
@@ -273,25 +250,22 @@ Modify as content requires.
   #resume-container {
     top: calc(50% + 43px);
   }
+
   #resume-downloads-bg {
     width: 180px;
     height: 580px;
   }
+
   #resume-downloads {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   #resume-downloads a {
     margin: 10px;
   }
 }
-
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
-
 /* ==========================================================================
 Print styles.
 Inlined to avoid the additional HTTP request:
@@ -299,41 +273,47 @@ https://www.phpied.com/delay-loading-your-print-css/
 ========================================================================== */
 @media print {
   *,
-  *::before,
-  *::after {
+*::before,
+*::after {
     background: #fff !important;
     color: #000 !important;
     /* Black prints faster */
-    -webkit-box-shadow: none !important;
-            box-shadow: none !important;
+    box-shadow: none !important;
     text-shadow: none !important;
   }
+
   a,
-  a:visited {
+a:visited {
     text-decoration: underline;
   }
+
   a[href]::after {
     content: " (" attr(href) ")";
   }
+
   abbr[title]::after {
     content: " (" attr(title) ")";
   }
+
   /*
   * Don't show links that are fragment identifiers,
   * or use the `javascript:` pseudo protocol
   */
   a[href^="#"]::after,
-  a[href^="javascript:"]::after {
+a[href^="javascript:"]::after {
     content: "";
   }
+
   pre {
     white-space: pre-wrap !important;
   }
+
   pre,
-  blockquote {
+blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
+
   /*
   * Printing Tables:
   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
@@ -341,19 +321,21 @@ https://www.phpied.com/delay-loading-your-print-css/
   thead {
     display: table-header-group;
   }
+
   tr,
-  img {
+img {
     page-break-inside: avoid;
   }
+
   p,
-  h2,
-  h3 {
+h2,
+h3 {
     orphans: 3;
     widows: 3;
   }
+
   h2,
-  h3 {
+h3 {
     page-break-after: avoid;
   }
-}
-/*# sourceMappingURL=resume.css.map */
+}/*# sourceMappingURL=resume.css.map */
