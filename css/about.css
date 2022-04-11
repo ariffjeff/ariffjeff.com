@@ -15,6 +15,38 @@ a, button, video {
   outline: none !important;
 }
 
+#homeBanner {
+  display: flex;
+  justify-content: center;
+  background-color: #181818;
+  transition: 0.3s;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+#homeBanner div {
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  transition: 0.3s;
+  width: 43px;
+  height: 43px;
+  padding: 7px;
+}
+#homeBanner img {
+  width: 100%;
+}
+#homeBanner:hover {
+  padding: 13px 0;
+}
+#homeBanner:hover > div {
+  background-color: white;
+}
+
+main {
+  padding-top: calc(43px + 7px * 2);
+}
+
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 /* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
@@ -119,34 +151,6 @@ a, button, video {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-#homeLogo {
-  display: flex;
-  justify-content: center;
-  background-color: #181818;
-  transition: 0.3s;
-  mix-blend-mode: screen;
-  position: relative;
-  z-index: 10;
-}
-#homeLogo div {
-  display: flex;
-  align-items: center;
-  border-radius: 12px;
-  transition: 0.3s;
-  width: 43px;
-  height: 43px;
-  padding: 7px;
-}
-#homeLogo img {
-  width: 100%;
-}
-#homeLogo:hover {
-  padding: 13px 0;
-}
-#homeLogo:hover > div {
-  background-color: white;
 }
 
 p {

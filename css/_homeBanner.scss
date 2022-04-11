@@ -1,0 +1,45 @@
+$logo_container_size: 43px;
+$logo_container_padding: 7px;
+$main_padding_top: calc(#{$logo_container_size} + #{$logo_container_padding} * 2);
+$a_banner_padding_hover: 13px;
+#homeBanner {
+  display: flex;
+  justify-content: center;
+  background-color: #181818;
+  transition: .3s;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  
+  div {
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    transition: .3s;
+    width: 43px;
+    height: $logo_container_size;
+    padding: $logo_container_padding;
+  }
+
+  img {
+    width: 100%;
+  }
+  
+  &:hover {
+    padding: $a_banner_padding_hover 0;
+  }
+  
+  &:hover > div {
+    background-color: white;
+  }
+}
+
+main {
+  padding-top: $main_padding_top; // push top of main to bottom of banner
+}
+
+// push element down to account for banner padding expansion when hovered
+// not necessary if element is ok to be covered by banner or there mustn't be any space between element and banner
+@mixin padTopForBannerHover {
+  padding-top: calc($main_padding_top + $a_banner_padding_hover * 2);
+}
