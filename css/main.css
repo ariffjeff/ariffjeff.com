@@ -292,12 +292,13 @@ nav div > a:hover {
   z-index: 2;
 }
 .copy-popup p {
-  border-radius: 10px 0 0 10px;
+  border-radius: 10px;
   display: flex;
   padding: 10px 15px;
   letter-spacing: 0.5px;
 }
 .copy-popup button {
+  display: none;
   border: none;
   cursor: pointer;
   border-left: 1px solid rgb(184, 184, 184);
