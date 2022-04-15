@@ -309,13 +309,14 @@ $dot-padding: 10px;
   }
   
   p {
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px; // if js disabled (copy button hidden by default)
     display: flex;
     padding: 10px $paddingWidth;
     letter-spacing: .5px;
   }
   
   button {
+    display: none; // if js disabled
     border: none;
     cursor: pointer;
     border-left: 1px solid rgb(184, 184, 184);
