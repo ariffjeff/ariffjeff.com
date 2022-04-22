@@ -4,7 +4,7 @@
   "description": "Ariff Jeff's portfolio central hub",
   "keywords": "",
   "license": "",
-  "author": "Ariff Jeff <ariff.jeff@uconn.edu> (ariffjeff.com)",
+  "author": "Ariff Jeff <ariffjeff@icloud.com> (ariffjeff.com)",
   "scripts": {
     "build": "parcel build index.html",
     "dev": "parcel index.html --open",
