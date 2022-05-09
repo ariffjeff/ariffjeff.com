@@ -499,10 +499,6 @@ Modify as content requires.
   #main3Dlink_img {
     display: initial;
   }
-
-  .copy-popup {
-    left: 200%;
-  }
 }
 @media only screen and (max-width: 414px) {
   body {
