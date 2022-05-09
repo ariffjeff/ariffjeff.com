@@ -252,9 +252,11 @@ nav div > a:hover {
 
 #social {
   position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 #social a {
-  margin: 0 10px;
+  margin: 0 10px 10px;
   width: 40px;
   height: 40px;
   opacity: 90%;
