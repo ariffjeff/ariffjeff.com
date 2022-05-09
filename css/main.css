@@ -202,9 +202,9 @@ main {
   box-shadow: rgba(0, 0, 0, 0.479) 5px 5px 15px;
 }
 #main3Dlink_video:hover > h3 {
-  mix-blend-mode: overlay;
   font-size: 60px;
   top: 85%;
+  opacity: 0;
 }
 
 #main3Dlink_img {
@@ -231,7 +231,7 @@ nav h3 {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 80px;
-  transition: 0.465s;
+  transition: 0.4s;
   text-shadow: rgba(0, 0, 0, 0.8) 0px 0px 4px;
 }
 nav div > a {

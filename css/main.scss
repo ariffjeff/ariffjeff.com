@@ -204,9 +204,9 @@ $transTime: .4s;
     box-shadow: rgba(0, 0, 0, 0.479) 5px 5px 15px;
     
     & > h3 {
-      mix-blend-mode: overlay;
       font-size: 60px;
       top: 85%;
+      opacity: 0;
     }
   } 
 }
@@ -237,7 +237,7 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 80px;
-    transition: .465s;
+    transition: $transTime;
     text-shadow: rgba(0, 0, 0, 0.8) 0px 0px 4px;
   }
 
