@@ -471,6 +471,14 @@ These examples override the primary ('mobile first') styles.
 Modify as content requires.
 ========================================================================== */
 @media only screen and (max-width: 1080px) {
+  #main3Dlink_video {
+    display: none;
+  }
+
+  #main3Dlink_img {
+    display: initial;
+  }
+
   #contactEmail:hover + .copy-popup, .copy-popup:hover {
     display: none;
   }
@@ -490,14 +498,6 @@ Modify as content requires.
   }
   #bio-stack *:not(:first-child):not(:last-child) {
     margin: 15px 0;
-  }
-
-  #main3Dlink_video {
-    display: none;
-  }
-
-  #main3Dlink_img {
-    display: initial;
   }
 }
 @media only screen and (max-width: 414px) {

@@ -479,6 +479,14 @@ $dot-padding: 10px;
 
   // ipad landscape and smaller
   @media only screen and (max-width: 1080px) {
+    #main3Dlink_video {
+      display: none;
+    }
+
+    #main3Dlink_img {
+      display: initial;
+    }
+
     #contactEmail:hover + .copy-popup, .copy-popup:hover {
       display: none;
     }
@@ -501,14 +509,6 @@ $dot-padding: 10px;
       & *:not(:first-child):not(:last-child) {
         margin: 15px 0;
       }
-    }
-
-    #main3Dlink_video {
-      display: none;
-    }
-
-    #main3Dlink_img {
-      display: initial;
     }
   }
 
