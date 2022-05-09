@@ -204,9 +204,9 @@ $transTime: .4s;
     box-shadow: rgba(0, 0, 0, 0.479) 5px 5px 15px;
     
     & > h3 {
-      mix-blend-mode: overlay;
       font-size: 60px;
       top: 85%;
+      opacity: 0;
     }
   } 
 }
@@ -237,7 +237,7 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 80px;
-    transition: .465s;
+    transition: $transTime;
     text-shadow: rgba(0, 0, 0, 0.8) 0px 0px 4px;
   }
 
@@ -262,9 +262,11 @@ nav {
 
 #social {
   position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
   
   a {
-    margin: 0 10px;
+    margin: 0 10px 10px;
     width: 40px;
     height: 40px;
     opacity: 90%;
@@ -475,6 +477,21 @@ $dot-padding: 10px;
   Modify as content requires.
   ========================================================================== */
 
+  // ipad landscape and smaller
+  @media only screen and (max-width: 1080px) {
+    #main3Dlink_video {
+      display: none;
+    }
+
+    #main3Dlink_img {
+      display: initial;
+    }
+
+    #contactEmail:hover + .copy-popup, .copy-popup:hover {
+      display: none;
+    }
+  }
+
   @media only screen and (max-width: 768px) {
     /* Style adjustments for viewports that meet the condition */
     #bio-line {
@@ -492,18 +509,6 @@ $dot-padding: 10px;
       & *:not(:first-child):not(:last-child) {
         margin: 15px 0;
       }
-    }
-
-    #main3Dlink_video {
-      display: none;
-    }
-
-    #main3Dlink_img {
-      display: initial;
-    }
-
-    .copy-popup {
-      left: 200%;
     }
   }
 
