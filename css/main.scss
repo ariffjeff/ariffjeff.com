@@ -477,6 +477,13 @@ $dot-padding: 10px;
   Modify as content requires.
   ========================================================================== */
 
+  // ipad landscape and smaller
+  @media only screen and (max-width: 1080px) {
+    #contactEmail:hover + .copy-popup, .copy-popup:hover {
+      display: none;
+    }
+  }
+
   @media only screen and (max-width: 768px) {
     /* Style adjustments for viewports that meet the condition */
     #bio-line {
