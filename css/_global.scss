@@ -1,9 +1,20 @@
+@font-face {
+  font-family: "GothamBook";
+  src: url(../fonts/GothamBook.ttf);
+}
+
+@font-face {
+  font-family: "GothamMedium";
+  src: url(../fonts/GothamMedium.ttf);
+}
+
 * {
   text-decoration: none;
 }
 
 html {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif; // backup if missing gotham
+  font-family: GothamBook, sans-serif;
   background-color: black;
 }
 
