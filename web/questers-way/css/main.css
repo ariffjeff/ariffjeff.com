@@ -236,8 +236,7 @@ header img {
 }
 
 main {
-  text-align: center;
-  /* For button */
+  text-align: center; /* For button */
 }
 
 main a {
@@ -278,54 +277,42 @@ footer li:nth-child(1) {
     display: flex;
     justify-content: space-evenly;
   }
-
   nav li {
     padding: 20px 0 60px 0;
   }
-
   header h1 {
     font-size: 40px;
   }
-
   header {
     margin-bottom: 0;
   }
-
   #icons {
     margin-top: 10px;
   }
-
   #mainImages {
     flex-flow: row;
     margin: 0 0.5vw;
   }
-
   #mainImages div {
     margin: 1.5vw 0.5vw;
     padding: 0 0.5vw;
   }
-
   picture {
     margin: 0.5vw;
   }
-
   footer ul, footer p {
     margin: 4vw 0;
   }
-
   footer h2 {
     margin-bottom: -2vw;
   }
-
   footer {
     display: flex;
     justify-content: space-around;
   }
-
   footer p {
     max-width: 26vw;
   }
-
   footer {
     padding-bottom: 0vw;
   }
@@ -334,7 +321,6 @@ footer li:nth-child(1) {
   nav ul {
     padding: 0 15vw;
   }
-
   footer ul, footer p {
     margin: 3vw 0;
   }
@@ -372,8 +358,7 @@ Helper classes
   padding: 0;
   position: absolute;
   width: 1px;
-  white-space: nowrap;
-  /* 1 */
+  white-space: nowrap; /* 1 */
 }
 
 /*
@@ -412,10 +397,8 @@ Helper classes
 */
 .clearfix:before,
 .clearfix:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
+  content: " "; /* 1 */
+  display: table; /* 2 */
 }
 
 .clearfix:after {
@@ -443,25 +426,20 @@ https://www.phpied.com/delay-loading-your-print-css/
 *:before,
 *:after {
     background: transparent !important;
-    color: #000 !important;
-    /* Black prints faster */
+    color: #000 !important; /* Black prints faster */
     box-shadow: none !important;
     text-shadow: none !important;
   }
-
   a,
 a:visited {
     text-decoration: underline;
   }
-
   a[href]:after {
     content: " (" attr(href) ")";
   }
-
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
-
   /*
   * Don't show links that are fragment identifiers,
   * or use the `javascript:` pseudo protocol
@@ -470,17 +448,14 @@ a:visited {
 a[href^="javascript:"]:after {
     content: "";
   }
-
   pre {
     white-space: pre-wrap !important;
   }
-
   pre,
 blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
-
   /*
   * Printing Tables:
   * http://css-discuss.incutio.com/wiki/Printing_Tables
@@ -488,19 +463,16 @@ blockquote {
   thead {
     display: table-header-group;
   }
-
   tr,
 img {
     page-break-inside: avoid;
   }
-
   p,
 h2,
 h3 {
     orphans: 3;
     widows: 3;
   }
-
   h2,
 h3 {
     page-break-after: avoid;

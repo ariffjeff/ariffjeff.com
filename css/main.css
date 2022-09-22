@@ -474,11 +474,9 @@ Modify as content requires.
   #main3Dlink_video {
     display: none;
   }
-
   #main3Dlink_img {
     display: initial;
   }
-
   #contactEmail:hover + .copy-popup, .copy-popup:hover {
     display: none;
   }
@@ -488,7 +486,6 @@ Modify as content requires.
   #bio-line {
     display: none;
   }
-
   #bio-stack {
     display: initial;
   }
@@ -505,15 +502,12 @@ Modify as content requires.
     align-items: initial;
     height: initial;
   }
-
   #social {
     margin-bottom: 70px;
   }
-
   nav {
     margin: 30px 0;
   }
-
   #pages {
     flex-direction: column;
   }
@@ -542,20 +536,16 @@ https://www.phpied.com/delay-loading-your-print-css/
     box-shadow: none !important;
     text-shadow: none !important;
   }
-
   a,
 a:visited {
     text-decoration: underline;
   }
-
   a[href]::after {
     content: " (" attr(href) ")";
   }
-
   abbr[title]::after {
     content: " (" attr(title) ")";
   }
-
   /*
   * Don't show links that are fragment identifiers,
   * or use the `javascript:` pseudo protocol
@@ -564,17 +554,14 @@ a:visited {
 a[href^="javascript:"]::after {
     content: "";
   }
-
   pre {
     white-space: pre-wrap !important;
   }
-
   pre,
 blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
-
   /*
   * Printing Tables:
   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
@@ -582,19 +569,16 @@ blockquote {
   thead {
     display: table-header-group;
   }
-
   tr,
 img {
     page-break-inside: avoid;
   }
-
   p,
 h2,
 h3 {
     orphans: 3;
     widows: 3;
   }
-
   h2,
 h3 {
     page-break-after: avoid;
