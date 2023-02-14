@@ -127,7 +127,7 @@ ul {
   background-color: black;
   border-radius: 9999px;
   padding: 10px 25px;
-  opacity: 77%;
+  opacity: 85%;
 }
 
 .overlay {
@@ -183,7 +183,7 @@ main {
 }
 
 .bio {
-  color: white;
+  color: #ff5500;
   font-size: calc(0.5vw + 15px);
   font-weight: normal;
 }
@@ -252,7 +252,7 @@ nav div > a {
   margin: 0 15px;
 }
 nav div > a:hover {
-  opacity: 85%;
+  opacity: 99%;
 }
 
 #pages {
