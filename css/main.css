@@ -127,7 +127,7 @@ ul {
   background-color: black;
   border-radius: 9999px;
   padding: 10px 25px;
-  opacity: 77%;
+  opacity: 85%;
 }
 
 .overlay {
@@ -183,7 +183,7 @@ main {
 }
 
 .bio {
-  color: white;
+  color: #ff5500;
   font-size: calc(0.5vw + 15px);
   font-weight: normal;
 }
@@ -252,7 +252,7 @@ nav div > a {
   margin: 0 15px;
 }
 nav div > a:hover {
-  opacity: 85%;
+  opacity: 99%;
 }
 
 #pages {
@@ -270,7 +270,7 @@ nav div > a:hover {
   justify-content: center;
 }
 #social a {
-  margin: 0 10px 10px;
+  margin: 0 10px 0px;
   width: 40px;
   height: 40px;
   opacity: 90%;
@@ -321,7 +321,6 @@ nav div > a:hover {
   border-radius: 0 10px 10px 0;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   padding: 0 15px;
 }
@@ -338,18 +337,7 @@ nav div > a:hover {
 #contactEmail:hover + .copy-popup, .copy-popup:hover {
   display: flex;
   position: absolute;
-  -webkit-animation: fadeIn 0.2s;
-          animation: fadeIn 0.2s;
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-    top: 130%;
-  }
-  100% {
-    opacity: 100%;
-  }
+  animation: fadeIn 0.2s;
 }
 
 @keyframes fadeIn {
@@ -376,20 +364,7 @@ nav div > a:hover {
 }
 
 #text_email.anim-copied {
-  -webkit-animation: blip-success 0.15s;
-          animation: blip-success 0.15s;
-}
-
-@-webkit-keyframes blip-success {
-  0% {
-    background-color: white;
-  }
-  50% {
-    background-color: #45ff62;
-  }
-  100% {
-    background-color: white;
-  }
+  animation: blip-success 0.15s;
 }
 
 @keyframes blip-success {
@@ -508,7 +483,7 @@ Modify as content requires.
     font-size: 20px;
   }
   #bio-stack *:not(:first-child):not(:last-child) {
-    margin: 15px 0;
+    margin: 8px 0;
   }
 }
 @media only screen and (max-width: 414px) {
@@ -542,8 +517,8 @@ https://www.phpied.com/delay-loading-your-print-css/
 ========================================================================== */
 @media print {
   *,
-*::before,
-*::after {
+  *::before,
+  *::after {
     background: #fff !important;
     color: #000 !important;
     /* Black prints faster */
@@ -551,7 +526,7 @@ https://www.phpied.com/delay-loading-your-print-css/
     text-shadow: none !important;
   }
   a,
-a:visited {
+  a:visited {
     text-decoration: underline;
   }
   a[href]::after {
@@ -565,14 +540,14 @@ a:visited {
   * or use the `javascript:` pseudo protocol
   */
   a[href^="#"]::after,
-a[href^="javascript:"]::after {
+  a[href^="javascript:"]::after {
     content: "";
   }
   pre {
     white-space: pre-wrap !important;
   }
   pre,
-blockquote {
+  blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
@@ -584,17 +559,17 @@ blockquote {
     display: table-header-group;
   }
   tr,
-img {
+  img {
     page-break-inside: avoid;
   }
   p,
-h2,
-h3 {
+  h2,
+  h3 {
     orphans: 3;
     widows: 3;
   }
   h2,
-h3 {
+  h3 {
     page-break-after: avoid;
   }
 }/*# sourceMappingURL=main.css.map */
